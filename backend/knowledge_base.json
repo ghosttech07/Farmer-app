@@ -1,0 +1,3423 @@
+{
+  "_meta": {
+    "status": "DRAFT. Products, doses per litre and waiting periods were checked on 04.11.2026 against the CIB&RC 'Major Uses of Pesticides' lists (as on 30.09.2026, ppqs.gov.in); each entry cites the exact row in 'sources', and 'expert_check' lists what the list does not settle. An agriculture officer (PJTSAU/ICAR) must still confirm each entry, and Telugu and Hindi speakers must review the wording, before verified=true.",
+    "disclaimer_te": "ఇది కేవలం సలహా సహాయం మాత్రమే. పిచికారీ చేసే ముందు మీ స్థానిక వ్యవసాయ అధికారిని సంప్రదించండి.",
+    "disclaimer_en": "This is an advisory aid only, not a substitute for an agriculture officer.",
+    "disclaimer_hi": "यह केवल सलाह है। छिड़काव से पहले अपने स्थानीय कृषि अधिकारी से सलाह लें।"
+  },
+  "crops": {
+    "rice": [
+      "వరి",
+      "paddy",
+      "rice",
+      "धान",
+      "चावल"
+    ],
+    "cotton": [
+      "పత్తి",
+      "cotton",
+      "कपास",
+      "cotton plant",
+      "cotton field"
+    ],
+    "chilli": [
+      "మిరప",
+      "chilli",
+      "chili",
+      "मिर्च",
+      "chilly",
+      "mirchi"
+    ],
+    "groundnut": [
+      "వేరుశనగ",
+      "వేరుసెనగ",
+      "groundnut",
+      "peanut",
+      "मूंगफली",
+      "मूँगफली",
+      "ground nut"
+    ],
+    "tomato": [
+      "టమాట",
+      "టొమాటో",
+      "టమోటా",
+      "tomato",
+      "टमाटर"
+    ],
+    "maize": [
+      "మొక్కజొన్న",
+      "maize",
+      "corn",
+      "मक्का",
+      "मक्के"
+    ],
+    "pulses": [
+      "కంది",
+      "శనగ",
+      "pigeon pea",
+      "redgram",
+      "chickpea",
+      "अरहर",
+      "तुअर",
+      "चना",
+      "चने",
+      "red gram",
+      "bengal gram",
+      "green gram",
+      "black gram",
+      "tur dal",
+      "moong"
+    ],
+    "vegetable": [
+      "కూరగాయ",
+      "వంకాయ",
+      "బెండ",
+      "vegetable",
+      "brinjal",
+      "okra",
+      "सब्जी",
+      "सब्ज़ी",
+      "बैंगन",
+      "भिंडी",
+      "eggplant",
+      "lady finger",
+      "ladies finger",
+      "bhindi"
+    ],
+    "wheat": [
+      "గోధుమ",
+      "गेहूं",
+      "गेहूँ",
+      "गेंहू",
+      "wheat"
+    ],
+    "sugarcane": [
+      "చెరకు",
+      "చెరుకు",
+      "गन्ना",
+      "गन्ने",
+      "sugarcane",
+      "sugar cane"
+    ],
+    "onion": [
+      "ఉల్లి",
+      "प्याज",
+      "प्याज़",
+      "onion"
+    ],
+    "potato": [
+      "బంగాళ",
+      "ఆలుగడ్డ",
+      "आलू",
+      "potato"
+    ],
+    "mango": [
+      "మామిడి",
+      "आम के",
+      "आम का",
+      "आम की",
+      "आम पर",
+      "आम में",
+      "आम के पेड़",
+      "mango"
+    ],
+    "soybean": [
+      "సోయా",
+      "सोयाबीन",
+      "soybean",
+      "soyabean",
+      "soya"
+    ],
+    "mustard": [
+      "ఆవాలు",
+      "ఆవ పంట",
+      "सरसों",
+      "mustard"
+    ],
+    "cabbage": [
+      "క్యాబేజీ",
+      "కాలీఫ్లవర్",
+      "గోబీ",
+      "पत्तागोभी",
+      "बंदगोभी",
+      "फूलगोभी",
+      "पत्ता गोभी",
+      "फूल गोभी",
+      "cabbage",
+      "cauliflower"
+    ]
+  },
+  "entries": [
+    {
+      "id": "rice_blast",
+      "crops": [
+        "rice"
+      ],
+      "verified": false,
+      "name_en": "Rice blast",
+      "name_te": "వరి అగ్గి తెగులు",
+      "symptoms": [
+        {
+          "k": [
+            "అగ్గి తెగులు",
+            "blast",
+            "ब्लास्ट",
+            "झोंका",
+            "leaf blast",
+            "neck blast"
+          ],
+          "w": 4
+        },
+        {
+          "k": [
+            "కుదురు ఆకారపు మచ్చ",
+            "కంటి ఆకారపు మచ్చ",
+            "spindle",
+            "బూడిద రంగు మచ్చ",
+            "బూడిద రంగు మధ్య",
+            "आँख के आकार",
+            "आंख के आकार",
+            "नाव के आकार",
+            "राख जैसे",
+            "स्लेटी धब्ब",
+            "eye shaped",
+            "eye-shaped",
+            "diamond shaped",
+            "boat shaped",
+            "grey centre",
+            "gray center",
+            "grey center"
+          ],
+          "w": 3
+        },
+        {
+          "k": [
+            "మెడ విరిగ",
+            "మెడ విరుగ",
+            "neck",
+            "కంకి మెడ",
+            "తెల్ల కంకి",
+            "गर्दन टूट",
+            "गर्दन तोड़",
+            "बाली की गर्दन",
+            "सफेद बाली",
+            "neck rot",
+            "neck break",
+            "neck broken"
+          ],
+          "w": 3
+        },
+        {
+          "k": [
+            "ఆకులపై మచ్చ",
+            "మచ్చలు",
+            "spots",
+            "धब्बे",
+            "धब्बा",
+            "spot",
+            "lesion"
+          ],
+          "w": 1
+        }
+      ],
+      "cause_en": "Fungus (Magnaporthe oryzae), favoured by cool nights, humidity and excess nitrogen.",
+      "cause_te": "ఇది శిలీంధ్రం వల్ల వస్తుంది; చల్లని రాత్రులు, తేమ, ఎక్కువ యూరియా వల్ల పెరుగుతుంది.",
+      "treatment": {
+        "product": "Tricyclazole 75% WP",
+        "dose_per_litre": "0.6 g",
+        "dose_te": "ఒక లీటరు నీటికి 0.6 గ్రాములు (10 లీటర్ల నీటికి 6 గ్రాములు)",
+        "cost_note": "Generic, among the cheapest options"
+      },
+      "waiting_days": 30,
+      "followup_en": "Are there eye-shaped spots with grey centres on leaves, or is the neck of the ear breaking?",
+      "followup_te": "ఆకులపై మధ్యలో బూడిద రంగుతో కంటి ఆకారపు మచ్చలు ఉన్నాయా, లేదా కంకి మెడ విరుగుతోందా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.42; PJTSAU/ICAR package (to confirm)",
+      "i18n": {
+        "hi": {
+          "name": "धान का ब्लास्ट (झोंका) रोग",
+          "cause": "यह फफूंद से होता है; ठंडी रातें, नमी और ज़्यादा यूरिया से बढ़ता है।",
+          "dose": "1 लीटर पानी में 0.6 ग्राम (10 लीटर पानी में 6 ग्राम)",
+          "followup": "क्या पत्तों पर बीच में राख जैसे रंग वाले आँख के आकार के धब्बे हैं, या बाली की गर्दन टूट रही है?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Fungicides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/Fungicide%20MUP%20%20as%20on%2030.09.2026.pdf",
+          "page": 42,
+          "row": "Tricyclazole 75% WP, Paddy blast: 300-400 g/ha in 500 L water (0.6-0.8 g/L); waiting period 30 days"
+        }
+      ],
+      "pest_terms": [
+        "blast"
+      ]
+    },
+    {
+      "id": "rice_bph",
+      "crops": [
+        "rice"
+      ],
+      "verified": false,
+      "name_en": "Brown planthopper",
+      "name_te": "వరిలో దోమ పోటు (గోధుమ రంగు దోమ)",
+      "symptoms": [
+        {
+          "k": [
+            "దోమ పోటు",
+            "గోధుమ రంగు దోమ",
+            "brown planthopper",
+            "bph",
+            "hopper",
+            "भूरा फुदका",
+            "फुदका",
+            "भूरा माहू",
+            "हॉपर",
+            "planthopper",
+            "plant hopper",
+            "brown hopper",
+            "hoppers"
+          ],
+          "w": 4
+        },
+        {
+          "k": [
+            "కాలినట్లు",
+            "కాలిపోయినట్లు",
+            "మాడిపోయ",
+            "burn",
+            "झुलस",
+            "जले जैसे",
+            "जल गय",
+            "हॉपर बर्न",
+            "hopperburn",
+            "hopper burn",
+            "burnt",
+            "burned",
+            "scorched"
+          ],
+          "w": 3
+        },
+        {
+          "k": [
+            "మొదళ్ళలో దోమ",
+            "మొదళ్లలో దోమ",
+            "దుబ్బు మొదల",
+            "దోమలు",
+            "तने के पास कीड़",
+            "जड़ के पास कीड़",
+            "नीचे कीड़े",
+            "at the base",
+            "base of the plant",
+            "near the base",
+            "bottom of the plant"
+          ],
+          "w": 3
+        },
+        {
+          "k": [
+            "ఎండిపోతున్న",
+            "ఎండిపోయ",
+            "patch",
+            "सूख रहे",
+            "सूख गय",
+            "घेरे में",
+            "circular patch",
+            "drying in patches",
+            "dried in circles",
+            "patches"
+          ],
+          "w": 1
+        }
+      ],
+      "cause_en": "Sap-sucking insect at plant base; builds up with heavy nitrogen and dense planting.",
+      "cause_te": "మొక్క మొదళ్ళలో రసం పీల్చే పురుగులు; ఎక్కువ యూరియా, దగ్గర నాట్లు వల్ల పెరుగుతాయి.",
+      "treatment": {
+        "product": "Pymetrozine 50% WG",
+        "dose_per_litre": "0.6 g",
+        "dose_te": "ఒక లీటరు నీటికి 0.6 గ్రాములు; మొక్కల మొదళ్ళ వద్ద తడిచేలా పిచికారీ చేయాలి",
+        "cost_note": "Spray at the base of tillers"
+      },
+      "waiting_days": 19,
+      "followup_en": "Do you see small brown insects at the base of the plants, and are plants drying in circular patches?",
+      "followup_te": "మొక్కల మొదళ్ళలో చిన్న గోధుమ రంగు పురుగులు కనిపిస్తున్నాయా, మరియు గుండ్రంగా మొక్కలు ఎండిపోతున్నాయా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.43; PJTSAU/ICAR package (to confirm)",
+      "i18n": {
+        "hi": {
+          "name": "भूरा फुदका (BPH)",
+          "cause": "पौधे के निचले हिस्से में रस चूसने वाला कीट; ज़्यादा नाइट्रोजन और घनी रोपाई से बढ़ता है।",
+          "dose": "1 लीटर पानी में 0.6 ग्राम; पौधों का निचला हिस्सा भीगे, ऐसा छिड़काव करें",
+          "followup": "क्या पौधों के निचले हिस्से में छोटे भूरे कीड़े दिखते हैं, और पौधे गोल घेरे में सूख रहे हैं?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Insecticides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/MUP%20%28insecticide%29%20%2030.09.2026.pdf",
+          "page": 43,
+          "row": "Pymetrozine 50% WG, Paddy brown plant hopper: 300 g/ha in 500 L (0.6 g/L); waiting period 19 days"
+        }
+      ],
+      "pest_terms": [
+        "brown plant hopper",
+        "plant hopper"
+      ]
+    },
+    {
+      "id": "rice_stem_borer",
+      "crops": [
+        "rice"
+      ],
+      "verified": false,
+      "name_en": "Rice stem borer",
+      "name_te": "వరి కాండం తొలుచు పురుగు",
+      "symptoms": [
+        {
+          "k": [
+            "కాండం తొలుచు",
+            "stem borer",
+            "తొలుచు పురుగు",
+            "तना छेदक",
+            "तना बेधक",
+            "स्टेम बोरर",
+            "stemborer",
+            "stem bore",
+            "borer in the stem"
+          ],
+          "w": 4
+        },
+        {
+          "k": [
+            "మొవ్వు ఎండ",
+            "మొవ్వు చనిపో",
+            "dead heart",
+            "deadheart",
+            "పీక ఎండ",
+            "डेड हार्ट",
+            "गोभ सूख",
+            "बीच की पत्ती सूख",
+            "गोभ मर",
+            "central shoot drying",
+            "centre shoot dried",
+            "center shoot dry"
+          ],
+          "w": 4
+        },
+        {
+          "k": [
+            "తెల్ల కంకి",
+            "white ear",
+            "తాలు గింజ",
+            "सफेद बाली",
+            "खाली बाली",
+            "दाने खाली",
+            "whitehead",
+            "white head",
+            "empty grains",
+            "chaffy"
+          ],
+          "w": 3
+        }
+      ],
+      "cause_en": "Moth larvae bore into the stem, killing the central shoot.",
+      "cause_te": "పురుగు పిల్లలు కాండంలోకి తొలిచి మధ్య మొవ్వును చంపుతాయి.",
+      "treatment": {
+        "product": "Chlorantraniliprole 18.5% SC",
+        "dose_per_litre": "0.3 ml",
+        "dose_te": "ఒక లీటరు నీటికి 0.3 మి.లీ. (10 లీటర్లకు 3 మి.లీ.)",
+        "cost_note": "Spray only if dead hearts exceed ~5%"
+      },
+      "waiting_days": 47,
+      "followup_en": "Does the central shoot pull out easily when you tug it?",
+      "followup_te": "మధ్య మొవ్వును లాగితే సులభంగా ఊడి వస్తోందా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.12; PJTSAU/ICAR package (to confirm)",
+      "i18n": {
+        "hi": {
+          "name": "धान का तना छेदक",
+          "cause": "पतंगे की सुंडी तने में छेद करके घुसती है और बीच की गोभ सूख जाती है।",
+          "dose": "1 लीटर पानी में 0.3 मि.ली. (10 लीटर में 3 मि.ली.)",
+          "followup": "क्या बीच की गोभ खींचने पर आसानी से बाहर निकल आती है?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Insecticides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/MUP%20%28insecticide%29%20%2030.09.2026.pdf",
+          "page": 12,
+          "row": "Chlorantraniliprole 18.50% SC, Rice stem borer & leaf folder: 150 ml/ha in 500 L (0.3 ml/L); waiting period 47 days"
+        }
+      ],
+      "pest_terms": [
+        "stem borer"
+      ]
+    },
+    {
+      "id": "cotton_pink_bollworm",
+      "crops": [
+        "cotton"
+      ],
+      "verified": false,
+      "name_en": "Cotton pink bollworm",
+      "name_te": "పత్తిలో గులాబీ రంగు పురుగు",
+      "symptoms": [
+        {
+          "k": [
+            "గులాబీ రంగు పురుగు",
+            "గులాబి రంగు పురుగు",
+            "pink bollworm",
+            "गुलाबी सुंडी",
+            "गुलाबी इल्ली",
+            "पिंक बॉलवर्म",
+            "pink ballworm",
+            "pink boll worm",
+            "pink ball worm"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "రోజెట్",
+            "రోజ్ పువ్వు",
+            "పువ్వులు ముడుచుకు",
+            "rosette",
+            "फूल मुड़",
+            "गुलाब जैसे फूल",
+            "रोज़ेट",
+            "फूल बंद"
+          ],
+          "w": 3
+        },
+        {
+          "k": [
+            "కాయల్లో పురుగు",
+            "కాయలో పురుగు",
+            "కాయ తొలుచు",
+            "కాయలకు రంధ్ర",
+            "bollworm",
+            "टिंडे में कीड़",
+            "टिंडे में सुंडी",
+            "टिंडों में छेद",
+            "बॉलवर्म",
+            "ballworm",
+            "boll worm",
+            "ball worm",
+            "pink worm"
+          ],
+          "w": 3
+        }
+      ],
+      "cause_en": "Larvae feed inside flowers and bolls, damaging lint and seed.",
+      "cause_te": "పురుగు పిల్లలు పూత, కాయల లోపల తిని పత్తి, విత్తనం పాడు చేస్తాయి.",
+      "treatment": {
+        "product": "Profenofos 50% EC",
+        "dose_per_litre": "2 ml",
+        "dose_te": "ఒక లీటరు నీటికి 2 మి.లీ. (10 లీటర్లకు 20 మి.లీ.)",
+        "cost_note": "Install pheromone traps first to time the spray"
+      },
+      "waiting_days": 15,
+      "followup_en": "When you open a boll or flower, do you see a small pinkish-white worm inside?",
+      "followup_te": "కాయ లేదా పువ్వును తెరిస్తే లోపల చిన్న గులాబీ-తెలుపు పురుగు కనిపిస్తోందా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.43; PJTSAU/ICAR package (to confirm)",
+      "i18n": {
+        "hi": {
+          "name": "कपास की गुलाबी सुंडी",
+          "cause": "सुंडियाँ फूलों और टिंडों के अंदर खाती हैं, जिससे रुई और बीज खराब होते हैं।",
+          "dose": "1 लीटर पानी में 2 मि.ली. (10 लीटर में 20 मि.ली.)",
+          "followup": "टिंडा या फूल खोलने पर क्या अंदर छोटी गुलाबी-सफेद सुंडी दिखती है?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Insecticides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/MUP%20%28insecticide%29%20%2030.09.2026.pdf",
+          "page": 43,
+          "row": "Profenofos 50% EC, Cotton bollworm: 1500-2000 ml/ha in 500-1000 L (1.5-4 ml/L); waiting period 15 days"
+        }
+      ],
+      "expert_check": "The list says 'bollworm', not pink bollworm by name: confirm with PJTSAU that profenofos is the recommended pink-bollworm spray.",
+      "pest_terms": [
+        "pink bollworm",
+        "bollworm"
+      ]
+    },
+    {
+      "id": "cotton_whitefly",
+      "crops": [
+        "cotton"
+      ],
+      "verified": false,
+      "name_en": "Cotton whitefly / leaf curl",
+      "name_te": "పత్తిలో తెల్ల దోమ / ఆకు ముడత",
+      "symptoms": [
+        {
+          "k": [
+            "తెల్ల దోమ",
+            "తెల్లదోమ",
+            "whitefly",
+            "white fly",
+            "सफेद मक्खी",
+            "सफ़ेद मक्खी",
+            "व्हाइटफ्लाई",
+            "white flies",
+            "whiteflies",
+            "tiny white insects",
+            "small white insects"
+          ],
+          "w": 4
+        },
+        {
+          "k": [
+            "ఆకు ముడత",
+            "ఆకులు ముడుచుకు",
+            "ఆకులు ముడత",
+            "leaf curl",
+            "पत्ता मरोड़",
+            "पत्ते मुड़",
+            "पत्तियाँ मुड़",
+            "पत्तियां मुड़",
+            "leaves curling",
+            "curled leaves",
+            "leaves curl"
+          ],
+          "w": 3
+        },
+        {
+          "k": [
+            "జిగురు",
+            "నల్లని బూజు",
+            "sooty",
+            "चिपचिप",
+            "काली फफूंद",
+            "कालिख",
+            "sticky",
+            "black mould",
+            "black mold",
+            "honeydew"
+          ],
+          "w": 2
+        }
+      ],
+      "cause_en": "Whitefly sucks sap and spreads leaf curl virus; the virus itself has no cure, so control the insect.",
+      "cause_te": "తెల్ల దోమ రసం పీల్చి ఆకు ముడత వైరస్‌ను వ్యాపింపజేస్తుంది; వైరస్‌కు మందు లేదు, దోమను అదుపు చేయాలి.",
+      "treatment": {
+        "product": "Diafenthiuron 50% WP",
+        "dose_per_litre": "1 g",
+        "dose_te": "ఒక లీటరు నీటికి 1 గ్రాము (10 లీటర్లకు 10 గ్రాములు)",
+        "cost_note": "Neem oil 5 ml/litre first for light attack; yellow sticky traps help"
+      },
+      "waiting_days": 21,
+      "followup_en": "Do tiny white flying insects rise when you shake the plant?",
+      "followup_te": "మొక్కను కదిలిస్తే చిన్న తెల్లని ఎగిరే పురుగులు లేస్తున్నాయా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.23; PJTSAU/ICAR package (to confirm)",
+      "i18n": {
+        "hi": {
+          "name": "कपास की सफेद मक्खी / पत्ता मरोड़",
+          "cause": "सफेद मक्खी रस चूसती है और पत्ता मरोड़ वायरस फैलाती है; वायरस का इलाज नहीं है, इसलिए कीट को रोकें।",
+          "dose": "1 लीटर पानी में 1 ग्राम (10 लीटर में 10 ग्राम)",
+          "followup": "क्या पौधे को हिलाने पर छोटी सफेद उड़ने वाली मक्खियाँ उठती हैं?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Insecticides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/MUP%20%28insecticide%29%20%2030.09.2026.pdf",
+          "page": 23,
+          "row": "Diafenthiuron 50% WP, Cotton whiteflies/aphids/thrips/jassids: 600 g/ha in 500-1000 L (0.6-1.2 g/L); waiting period 21 days"
+        }
+      ],
+      "pest_terms": [
+        "whitefl",
+        "white fly"
+      ]
+    },
+    {
+      "id": "chilli_thrips",
+      "crops": [
+        "chilli"
+      ],
+      "verified": false,
+      "name_en": "Chilli thrips / leaf curl",
+      "name_te": "మిరపలో తామర పురుగులు",
+      "symptoms": [
+        {
+          "k": [
+            "తామర పురుగు",
+            "తామర",
+            "thrips",
+            "थ्रिप्स",
+            "चुरड़ा",
+            "thrip"
+          ],
+          "w": 4
+        },
+        {
+          "k": [
+            "ఆకులు ముడుచుకు",
+            "ఆకు ముడత",
+            "ఆకులు పైకి ముడుచు",
+            "leaf curl",
+            "కప్పు ఆకారం",
+            "पत्ते मुड़",
+            "पत्तियाँ मुड़",
+            "पत्तियां मुड़",
+            "ऊपर की ओर मुड़",
+            "upward curl",
+            "leaves curling upwards",
+            "curling up"
+          ],
+          "w": 3
+        },
+        {
+          "k": [
+            "ఆకులు చిన్నవి",
+            "పూత రాలు",
+            "పూత రాలిపో",
+            "फूल झड़",
+            "पत्तियाँ छोटी",
+            "flower drop",
+            "flowers falling",
+            "small leaves"
+          ],
+          "w": 1
+        }
+      ],
+      "cause_en": "Tiny sap-sucking thrips cause upward leaf curl and flower drop.",
+      "cause_te": "చిన్న రసం పీల్చే తామర పురుగులు ఆకులను పైకి ముడుచుకునేలా చేసి పూత రాలుస్తాయి.",
+      "treatment": {
+        "product": "Fipronil 5% SC",
+        "dose_per_litre": "2 ml",
+        "dose_te": "ఒక లీటరు నీటికి 2 మి.లీ. (10 లీటర్లకు 20 మి.లీ.)",
+        "cost_note": "Blue sticky traps help monitoring"
+      },
+      "waiting_days": 7,
+      "followup_en": "Do you see very small thin insects inside the folded leaves or flowers?",
+      "followup_te": "ముడుచుకున్న ఆకులు లేదా పువ్వులలో చాలా చిన్న సన్నని పురుగులు కనిపిస్తున్నాయా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.29; PJTSAU/ICAR package (to confirm)",
+      "i18n": {
+        "hi": {
+          "name": "मिर्च का थ्रिप्स / पत्ता मरोड़",
+          "cause": "छोटे रस चूसने वाले थ्रिप्स से पत्तियाँ ऊपर की ओर मुड़ती हैं और फूल झड़ते हैं।",
+          "dose": "1 लीटर पानी में 2 मि.ली. (10 लीटर में 20 मि.ली.)",
+          "followup": "क्या मुड़ी हुई पत्तियों या फूलों के अंदर बहुत छोटे पतले कीड़े दिखते हैं?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Insecticides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/MUP%20%28insecticide%29%20%2030.09.2026.pdf",
+          "page": 29,
+          "row": "Fipronil 05% SC, Chilli thrips/aphids/fruit borers: 800-1000 ml/ha in 500 L (1.6-2 ml/L); waiting period 7 days"
+        }
+      ],
+      "pest_terms": [
+        "thrips"
+      ]
+    },
+    {
+      "id": "groundnut_tikka",
+      "crops": [
+        "groundnut"
+      ],
+      "verified": false,
+      "name_en": "Groundnut tikka leaf spot",
+      "name_te": "వేరుశనగలో టిక్కా ఆకు మచ్చ తెగులు",
+      "symptoms": [
+        {
+          "k": [
+            "టిక్కా",
+            "tikka",
+            "टिक्का"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "ఆకు మచ్చ",
+            "ఆకులపై మచ్చ",
+            "leaf spot",
+            "గోధుమ రంగు మచ్చ",
+            "నల్లని మచ్చ",
+            "पत्ती धब्बा",
+            "पत्तों पर धब्बे",
+            "भूरे धब्बे",
+            "काले धब्बे",
+            "leaf spots",
+            "brown spots",
+            "black spots",
+            "dark spots"
+          ],
+          "w": 3
+        },
+        {
+          "k": [
+            "పసుపు రంగు వలయ",
+            "పసుపు వలయ",
+            "ఆకులు రాలిపో",
+            "ఆకులు రాలు",
+            "पीला घेरा",
+            "पीले घेरे",
+            "पत्ते झड़",
+            "yellow halo",
+            "yellow ring",
+            "leaves falling",
+            "leaf fall"
+          ],
+          "w": 2
+        }
+      ],
+      "cause_en": "Fungal leaf spot causing early leaf drop and yield loss.",
+      "cause_te": "శిలీంధ్రం వల్ల ఆకు మచ్చలు వచ్చి ఆకులు ముందే రాలి దిగుబడి తగ్గుతుంది.",
+      "treatment": {
+        "product": "Mancozeb 75% WP",
+        "dose_per_litre": "2.5 g",
+        "dose_te": "ఒక లీటరు నీటికి 2.5 గ్రాములు (10 లీటర్లకు 25 గ్రాములు)",
+        "cost_note": "Cheapest protectant fungicide"
+      },
+      "waiting_days": 15,
+      "followup_en": "Are the spots brown/black with a yellow ring around them?",
+      "followup_te": "మచ్చలు గోధుమ/నలుపు రంగులో చుట్టూ పసుపు వలయంతో ఉన్నాయా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.18; PJTSAU/ICAR package (to confirm)",
+      "i18n": {
+        "hi": {
+          "name": "मूंगफली का टिक्का रोग",
+          "cause": "फफूंद से पत्तों पर धब्बे; पत्ते जल्दी झड़ते हैं और उपज घटती है।",
+          "dose": "1 लीटर पानी में 2.5 ग्राम (10 लीटर में 25 ग्राम)",
+          "followup": "क्या धब्बे भूरे/काले हैं और उनके चारों ओर पीला घेरा है?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Fungicides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/Fungicide%20MUP%20%20as%20on%2030.09.2026.pdf",
+          "page": 18,
+          "row": "Mancozeb 75% WP, Groundnut tikka & rust: 1.5-2 kg/ha in 750 L (2-2.7 g/L); waiting period not given"
+        }
+      ],
+      "expert_check": "The list gives no waiting period for groundnut: 15 days is a draft value; take it from the product label.",
+      "pest_terms": [
+        "tikka",
+        "leaf spot"
+      ]
+    },
+    {
+      "id": "tomato_early_blight",
+      "crops": [
+        "tomato"
+      ],
+      "verified": false,
+      "name_en": "Tomato early blight",
+      "name_te": "టమాటలో ఆకు మచ్చ తెగులు (ఎర్లీ బ్లైట్)",
+      "symptoms": [
+        {
+          "k": [
+            "early blight",
+            "ఎర్లీ బ్లైట్",
+            "अगेती झुलसा",
+            "अर्ली ब्लाइट"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "వలయాకార",
+            "వలయాలు",
+            "concentric",
+            "గుండ్రని మచ్చ",
+            "छल्ले",
+            "छल्लेदार",
+            "गोल धब्बे",
+            "rings",
+            "target spots",
+            "target-like",
+            "circles"
+          ],
+          "w": 3
+        },
+        {
+          "k": [
+            "ఆకు మచ్చ",
+            "ఆకులపై మచ్చ",
+            "మచ్చలు",
+            "గోధుమ రంగు మచ్చ",
+            "కింది ఆకులు",
+            "धब्बे",
+            "भूरे धब्बे",
+            "निचली पत्तियाँ",
+            "निचली पत्तियां",
+            "brown spots",
+            "lower leaves",
+            "spots on lower leaves"
+          ],
+          "w": 2
+        }
+      ],
+      "cause_en": "Fungal disease starting on lower leaves with ring-patterned brown spots.",
+      "cause_te": "కింది ఆకులతో మొదలై వలయాలతో గోధుమ మచ్చలు ఏర్పడే శిలీంధ్ర తెగులు.",
+      "treatment": {
+        "product": "Mancozeb 75% WG",
+        "dose_per_litre": "2 g",
+        "dose_te": "ఒక లీటరు నీటికి 2 గ్రాములు (10 లీటర్లకు 20 గ్రాములు)",
+        "cost_note": "Remove badly affected lower leaves first"
+      },
+      "waiting_days": 6,
+      "followup_en": "Do the spots show rings inside them, like a target?",
+      "followup_te": "మచ్చల లోపల లక్ష్యం గుర్తులా వలయాలు కనిపిస్తున్నాయా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.18; PJTSAU/ICAR package (to confirm)",
+      "i18n": {
+        "hi": {
+          "name": "टमाटर का अगेती झुलसा",
+          "cause": "फफूंद रोग जो निचली पत्तियों से शुरू होता है, गोल छल्लेदार भूरे धब्बों के साथ।",
+          "dose": "1 लीटर पानी में 2 ग्राम (10 लीटर में 20 ग्राम)",
+          "followup": "क्या धब्बों के अंदर निशाने जैसे छल्ले दिखते हैं?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Fungicides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/Fungicide%20MUP%20%20as%20on%2030.09.2026.pdf",
+          "page": 18,
+          "row": "Mancozeb 75% WG, Tomato early blight: 1000 g/ha in 500 L (2 g/L); waiting period 5-6 days"
+        }
+      ],
+      "expert_check": "Changed from Mancozeb 75% WP, which the list registers on tomato for late blight and leaf spot, not early blight. Waiting period 6 days = the longer end of the label's 5-6.",
+      "pest_terms": [
+        "early blight"
+      ]
+    },
+    {
+      "id": "fruit_borer",
+      "crops": [
+        "tomato",
+        "pulses",
+        "chilli",
+        "vegetable"
+      ],
+      "verified": false,
+      "name_en": "Fruit / pod borer (Helicoverpa)",
+      "name_te": "కాయ తొలుచు పురుగు (పచ్చ పురుగు)",
+      "symptoms": [
+        {
+          "k": [
+            "కాయ తొలుచు",
+            "కాయ తొలిచే",
+            "పచ్చ పురుగు",
+            "శనగ పచ్చ",
+            "helicoverpa",
+            "pod borer",
+            "fruit borer",
+            "फल छेदक",
+            "फली छेदक",
+            "चने की इल्ली",
+            "हरी सुंडी",
+            "हेलिकोवर्पा",
+            "pod borers",
+            "fruit borers",
+            "green caterpillar",
+            "caterpillar"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "కాయలకు రంధ్ర",
+            "కాయల్లో రంధ్ర",
+            "కాయలో పురుగు",
+            "కాయల్లో పురుగు",
+            "holes in",
+            "फलों में छेद",
+            "फलियों में छेद",
+            "फल में कीड़",
+            "फली में कीड़",
+            "holes in fruit",
+            "holes in the fruit",
+            "holes in pods",
+            "worm inside the fruit",
+            "worms in fruit"
+          ],
+          "w": 3
+        }
+      ],
+      "cause_en": "Caterpillars bore into fruits and pods and feed inside.",
+      "cause_te": "పురుగులు కాయలు, పిందెలను తొలిచి లోపల తింటాయి.",
+      "treatment": {
+        "product": "Chlorantraniliprole 18.5% SC",
+        "dose_per_litre": "0.3 ml",
+        "dose_te": "ఒక లీటరు నీటికి 0.3 మి.లీ. (10 లీటర్లకు 3 మి.లీ.)",
+        "cost_note": "Pheromone traps and hand-picking of larvae reduce sprays"
+      },
+      "waiting_days": 29,
+      "followup_en": "Do you see green or brown caterpillars on or inside the fruits/pods?",
+      "followup_te": "కాయల మీద లేదా లోపల ఆకుపచ్చ/గోధుమ రంగు పురుగులు కనిపిస్తున్నాయా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.12; PJTSAU/ICAR package (to confirm)",
+      "i18n": {
+        "hi": {
+          "name": "फल / फली छेदक (हेलिकोवर्पा)",
+          "cause": "सुंडियाँ फलों और फलियों में छेद करके अंदर खाती हैं।",
+          "dose": "1 लीटर पानी में 0.3 मि.ली. (10 लीटर में 3 मि.ली.)",
+          "followup": "क्या फलों/फलियों पर या अंदर हरी या भूरी सुंडियाँ दिखती हैं?"
+        }
+      },
+      "waiting_by_crop": {
+        "tomato": 3,
+        "chilli": 3,
+        "pulses": 29
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Insecticides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/MUP%20%28insecticide%29%20%2030.09.2026.pdf",
+          "page": 12,
+          "row": "Chlorantraniliprole 18.50% SC: Tomato fruit borer 150 ml/ha in 500 L, 3 days; Chilli 150 ml/ha in 500 L, 3 days; Pigeon pea 150 ml/ha in 500-750 L, 29 days; Bengal gram 125 ml/ha in 500 L, 11 days; Brinjal 200 ml/ha, 22 days; Okra 125 ml/ha, 5 days"
+        }
+      ],
+      "expert_check": "Changed from emamectin benzoate 5% SG, which the list does not register on tomato. Bengal gram (125 ml/ha) and okra are slightly below 0.3 ml/L; unknown crops get the longest waiting period (29 days).",
+      "pest_terms": [
+        "fruit borer",
+        "pod borer",
+        "helicoverpa"
+      ]
+    },
+    {
+      "id": "maize_faw",
+      "crops": [
+        "maize"
+      ],
+      "verified": false,
+      "name_en": "Maize fall armyworm",
+      "name_te": "మొక్కజొన్నలో కత్తెర పురుగు",
+      "symptoms": [
+        {
+          "k": [
+            "కత్తెర పురుగు",
+            "కత్తెర",
+            "armyworm",
+            "fall armyworm",
+            "फॉल आर्मीवर्म",
+            "आर्मीवर्म",
+            "सैनिक कीट",
+            "army worm",
+            "fall army worm"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "సుడిలో పురుగు",
+            "మొవ్వులో పురుగు",
+            "ఆకు సుడి",
+            "whorl",
+            "गोभ में कीड़",
+            "गोभ में सुंडी",
+            "पोंगली",
+            "worm in the whorl",
+            "caterpillar in the whorl",
+            "central leaves eaten"
+          ],
+          "w": 3
+        },
+        {
+          "k": [
+            "ఆకులకు రంధ్ర",
+            "ఆకులు తిన",
+            "రంధ్రాలు",
+            "మలం",
+            "తుక్కు",
+            "पत्तों में छेद",
+            "पत्तियों में छेद",
+            "बुरादा",
+            "बुरादे",
+            "holes in leaves",
+            "sawdust",
+            "frass",
+            "ragged leaves"
+          ],
+          "w": 2
+        }
+      ],
+      "cause_en": "Caterpillars hide in the whorl and chew leaves, leaving holes and sawdust-like droppings.",
+      "cause_te": "పురుగులు సుడిలో దాగి ఆకులు తిని రంధ్రాలు, రంపపు పొట్టు లాంటి మలం వదులుతాయి.",
+      "treatment": {
+        "product": "Chlorantraniliprole 18.5% SC",
+        "dose_per_litre": "0.4 ml",
+        "dose_te": "ఒక లీటరు నీటికి 0.4 మి.లీ.; సుడిలో పడేలా పిచికారీ చేయాలి",
+        "cost_note": "Early whorl-stage spray; sand+lime in the whorl is a low-cost option"
+      },
+      "waiting_days": 10,
+      "followup_en": "Do you see sawdust-like droppings inside the central whorl?",
+      "followup_te": "మధ్య సుడిలో రంపపు పొట్టు లాంటి మలం కనిపిస్తోందా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.12; PJTSAU/ICAR package (to confirm)",
+      "i18n": {
+        "hi": {
+          "name": "मक्के की फॉल आर्मीवर्म",
+          "cause": "सुंडियाँ गोभ में छिपकर पत्तियाँ खाती हैं, जिससे छेद और बुरादे जैसा मल दिखता है।",
+          "dose": "1 लीटर पानी में 0.4 मि.ली.; गोभ में जाए, ऐसा छिड़काव करें",
+          "followup": "क्या बीच की गोभ में बुरादे जैसा मल दिखता है?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Insecticides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/MUP%20%28insecticide%29%20%2030.09.2026.pdf",
+          "page": 12,
+          "row": "Chlorantraniliprole 18.50% SC, Maize stem borers & fall armyworm (Spodoptera frugiperda): 200 ml/ha in 500 L (0.4 ml/L); waiting period 10 days"
+        }
+      ],
+      "expert_check": "Changed from emamectin benzoate 5% SG, which the list does not register on maize.",
+      "pest_terms": [
+        "fall army",
+        "frugiperda"
+      ]
+    },
+    {
+      "id": "powdery_mildew",
+      "crops": [
+        "chilli",
+        "tomato",
+        "vegetable",
+        "pulses"
+      ],
+      "verified": false,
+      "name_en": "Powdery mildew",
+      "name_te": "బూడిద తెగులు",
+      "symptoms": [
+        {
+          "k": [
+            "బూడిద తెగులు",
+            "powdery mildew",
+            "powdery",
+            "चूर्णिल आसिता",
+            "पाउडरी मिल्ड्यू",
+            "भभूतिया",
+            "mildew"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "తెల్లటి పొడి",
+            "తెల్లని పొడి",
+            "పిండి చల్లినట్లు",
+            "తెల్లని బూజు",
+            "తెల్లటి బూజు",
+            "सफेद पाउडर",
+            "सफ़ेद पाउडर",
+            "सफेद चूर्ण",
+            "आटे जैसा",
+            "white powder",
+            "powdery coating",
+            "white dust",
+            "flour like",
+            "flour-like",
+            "white coating"
+          ],
+          "w": 4
+        }
+      ],
+      "cause_en": "Fungus forming white powder on leaves, common in dry weather with cool nights.",
+      "cause_te": "ఆకులపై తెల్లటి పొడిలా ఏర్పడే శిలీంధ్రం; పొడి వాతావరణం, చల్లని రాత్రులలో ఎక్కువ.",
+      "treatment": {
+        "product": "Sulphur 80% WP (wettable sulphur)",
+        "dose_per_litre": "3 g",
+        "dose_te": "ఒక లీటరు నీటికి 3 గ్రాములు (10 లీటర్లకు 30 గ్రాములు); ఎండ ఎక్కువగా ఉన్నప్పుడు చేయవద్దు",
+        "cost_note": "Low-cost; avoid spraying in very hot hours"
+      },
+      "waiting_days": 5,
+      "followup_en": "Is there a white powder on the leaf surface that rubs off?",
+      "followup_te": "ఆకు పైభాగంలో రుద్దితే వచ్చే తెల్లటి పొడి ఉందా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.35; PJTSAU/ICAR package (to confirm)",
+      "i18n": {
+        "hi": {
+          "name": "चूर्णिल आसिता (पाउडरी मिल्ड्यू)",
+          "cause": "फफूंद जो पत्तियों पर सफेद पाउडर बनाती है; सूखे मौसम और ठंडी रातों में आम।",
+          "dose": "1 लीटर पानी में 3 ग्राम (10 लीटर में 30 ग्राम); तेज़ धूप में छिड़काव न करें",
+          "followup": "क्या पत्ती की ऊपरी सतह पर सफेद पाउडर है जो रगड़ने से निकल जाता है?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Fungicides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/Fungicide%20MUP%20%20as%20on%2030.09.2026.pdf",
+          "page": 35,
+          "row": "Sulphur 80% WP, Powdery mildew on cowpea/moong/urid, chillies & okra, pea: 3.13 kg/ha in 750-1000 L (3.1-4.2 g/L); waiting period not given"
+        }
+      ],
+      "expert_check": "Tomato is not on the sulphur 80% WP list; the list gives no waiting period (5 days is a draft value).",
+      "pest_terms": [
+        "powdery mildew"
+      ]
+    },
+    {
+      "id": "aphids",
+      "crops": [
+        "cotton",
+        "chilli",
+        "vegetable",
+        "pulses",
+        "tomato",
+        "groundnut"
+      ],
+      "verified": false,
+      "name_en": "Aphids",
+      "name_te": "పేనుబంక",
+      "symptoms": [
+        {
+          "k": [
+            "పేనుబంక",
+            "పేను బంక",
+            "aphid",
+            "माहू",
+            "मोयला",
+            "चेपा",
+            "एफिड",
+            "aphids",
+            "plant lice"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "చిన్న నల్లని పురుగులు",
+            "చిన్న పచ్చ పురుగులు",
+            "చీమలు",
+            "జిగురు జిగురు",
+            "छोटे काले कीड़े",
+            "छोटे हरे कीड़े",
+            "चींटियाँ",
+            "चींटियां",
+            "small black insects",
+            "small green insects",
+            "tiny green insects",
+            "ants on the plant"
+          ],
+          "w": 2
+        }
+      ],
+      "cause_en": "Small soft insects clustering on shoots and leaf undersides, sucking sap.",
+      "cause_te": "చిన్న మెత్తని పురుగులు కొమ్మలు, ఆకుల కింద గుంపులుగా చేరి రసం పీలుస్తాయి.",
+      "treatment": {
+        "product": "Azadirachtin 0.03% EC (neem oil based)",
+        "dose_per_litre": "5 ml",
+        "dose_te": "ఒక లీటరు నీటికి 5 మి.లీ. వేప నూనె (10 లీటర్లకు 50 మి.లీ.)",
+        "cost_note": "Cheapest first step, safe for natural enemies"
+      },
+      "waiting_days": 5,
+      "followup_en": "Are there clusters of tiny soft insects on the tender shoots or under leaves?",
+      "followup_te": "లేత కొమ్మలు లేదా ఆకుల కింద చిన్న మెత్తని పురుగుల గుంపులు ఉన్నాయా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.2; PJTSAU/ICAR package (to confirm)",
+      "i18n": {
+        "hi": {
+          "name": "माहू (एफिड)",
+          "cause": "छोटे मुलायम कीड़े जो कोंपलों और पत्तियों के नीचे झुंड में रस चूसते हैं।",
+          "dose": "1 लीटर पानी में 5 मि.ली. नीम तेल (10 लीटर में 50 मि.ली.)",
+          "followup": "क्या कोमल टहनियों पर या पत्तियों के नीचे छोटे मुलायम कीड़ों के झुंड हैं?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Bio-insecticides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/MUP%20%28bio%20insecticide%29%2030.09.2026.pdf",
+          "page": 2,
+          "row": "Azadirachtin 00.03% EC (neem oil based), Cotton bollworm & aphids: 2500-5000 ml/ha in 500 L (5-10 ml/L); waiting period 5 days"
+        }
+      ],
+      "expert_check": "Changed from Azadirachtin 0.15% EC, which is not registered against aphids. The 0.03% product is registered for aphids on cotton only; other crops are not named on the list.",
+      "pest_terms": [
+        "aphid"
+      ]
+    },
+    {
+      "id": "rice_sheath_blight",
+      "crops": [
+        "rice"
+      ],
+      "verified": false,
+      "name_en": "Rice sheath blight",
+      "name_te": "వరి పొడ తెగులు",
+      "symptoms": [
+        {
+          "k": [
+            "పొడ తెగులు",
+            "షీత్ బ్లైట్",
+            "शीथ ब्लाइट",
+            "आवरण झुलसा",
+            "sheath blight"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "కాండంపై మచ్చ",
+            "పొరపై మచ్చ",
+            "నీటి దగ్గర మచ్చ",
+            "तने पर धब्बे",
+            "तनों पर धब्बे",
+            "पानी के पास धब्बे",
+            "patches on the stem",
+            "spots on the stem",
+            "spots near the water"
+          ],
+          "w": 3
+        }
+      ],
+      "cause_en": "Fungus (Rhizoctonia) on leaf sheaths near the water line; dense planting and excess urea favour it.",
+      "cause_te": "నీటి మట్టం దగ్గర కాండం పొరలపై శిలీంధ్రం వల్ల వస్తుంది; దట్టంగా నాటడం, ఎక్కువ యూరియా వల్ల పెరుగుతుంది.",
+      "treatment": {
+        "product": "Tebuconazole 25.9% EC",
+        "dose_per_litre": "1.5 ml",
+        "dose_te": "ఒక లీటరు నీటికి 1.5 మి.లీ. (10 లీటర్లకు 15 మి.లీ.)",
+        "cost_note": "Avoid excess urea; keep spacing"
+      },
+      "waiting_days": 10,
+      "followup_en": "Are there grey-green patches with brown edges on the stems near the water?",
+      "followup_te": "నీటి దగ్గర కాండంపై గోధుమ అంచులతో బూడిద-ఆకుపచ్చ మచ్చలు ఉన్నాయా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.37; symptoms: TNAU Agritech",
+      "i18n": {
+        "hi": {
+          "name": "धान का शीथ ब्लाइट (आवरण झुलसा)",
+          "cause": "यह फफूंद पानी की सतह के पास तने के आवरण पर लगती है; घनी रोपाई और ज़्यादा यूरिया से बढ़ती है।",
+          "dose": "1 लीटर पानी में 1.5 मि.ली. (10 लीटर में 15 मि.ली.)",
+          "followup": "क्या पानी के पास तनों पर भूरे किनारे वाले स्लेटी-हरे धब्बे हैं?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Fungicides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/Fungicide%20MUP%20%20as%20on%2030.09.2026.pdf",
+          "page": 37,
+          "row": "Tebuconazole 25.9% EC, Rice blast & sheath blight: 0.750 L/ha in 500 L (1.5 ml/L); waiting period 10 days"
+        },
+        {
+          "title": "TNAU Agritech: Sheath blight of rice",
+          "url": "http://www.agritech.tnau.ac.in/expert_system/paddy/cpdissheathblight.html",
+          "page": null,
+          "row": "Symptoms"
+        }
+      ],
+      "pest_terms": [
+        "sheath blight"
+      ]
+    },
+    {
+      "id": "rice_leaf_folder",
+      "crops": [
+        "rice"
+      ],
+      "verified": false,
+      "name_en": "Rice leaf folder",
+      "name_te": "వరి ఆకుముడత పురుగు",
+      "symptoms": [
+        {
+          "k": [
+            "ఆకుముడత",
+            "ఆకు ముడత",
+            "पत्ता लपेटक",
+            "पत्ती लपेटक",
+            "पत्ता मोड़क",
+            "leaf folder",
+            "leaf roller"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "ఆకులు ముడుచుకు",
+            "ఆకులు మడత",
+            "తెల్లని చారలు",
+            "पत्तियाँ मुड़ी",
+            "पत्तियां मुड़ी",
+            "सफेद धारियाँ",
+            "सफेद धारियां",
+            "folded leaves",
+            "leaves folded",
+            "white streaks"
+          ],
+          "w": 3
+        }
+      ],
+      "cause_en": "Caterpillars fold leaves lengthwise and scrape the green inside, leaving white streaks.",
+      "cause_te": "పురుగులు ఆకులను పొడవుగా మడిచి లోపలి పచ్చదనం గీకి తింటాయి; ఆకులపై తెల్లని చారలు వస్తాయి.",
+      "treatment": {
+        "product": "Chlorantraniliprole 18.5% SC",
+        "dose_per_litre": "0.3 ml",
+        "dose_te": "ఒక లీటరు నీటికి 0.3 మి.లీ. (10 లీటర్లకు 3 మి.లీ.)",
+        "cost_note": "Spray only above 10% damaged leaves"
+      },
+      "waiting_days": 47,
+      "followup_en": "Are leaves folded like tubes with white streaks and a small worm inside?",
+      "followup_te": "ఆకులు గొట్టంలా ముడుచుకుని తెల్లని చారలతో, లోపల చిన్న పురుగు ఉందా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.12; symptoms: TNAU Agritech",
+      "i18n": {
+        "hi": {
+          "name": "धान का पत्ता लपेटक",
+          "cause": "इल्लियाँ पत्तियों को लंबाई में मोड़कर अंदर का हरा भाग खुरचती हैं, जिससे सफेद धारियाँ बनती हैं।",
+          "dose": "1 लीटर पानी में 0.3 मि.ली. (10 लीटर में 3 मि.ली.)",
+          "followup": "क्या पत्तियाँ नली जैसी मुड़ी हैं, सफेद धारियों के साथ और अंदर छोटी इल्ली है?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Insecticides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/MUP%20%28insecticide%29%20%2030.09.2026.pdf",
+          "page": 12,
+          "row": "Chlorantraniliprole 18.50% SC, Rice stem borer & leaf folder: 150 ml/ha in 500 L (0.3 ml/L); waiting period 47 days"
+        },
+        {
+          "title": "TNAU Agritech: Insect pests of field crops and their management",
+          "url": "https://agritech.tnau.ac.in/pdf/6.pdf",
+          "page": null,
+          "row": "Symptoms"
+        }
+      ],
+      "pest_terms": [
+        "leaf folder"
+      ]
+    },
+    {
+      "id": "rice_gall_midge",
+      "crops": [
+        "rice"
+      ],
+      "verified": false,
+      "name_en": "Rice gall midge",
+      "name_te": "వరి ఉల్లికోడు",
+      "symptoms": [
+        {
+          "k": [
+            "ఉల్లికోడు",
+            "ఉల్లి కోడు",
+            "गॉल मिज",
+            "गंगई",
+            "gall midge"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "ఉల్లి ఆకు",
+            "వెండి కొమ్మ",
+            "प्याज की पत्ती",
+            "प्याज जैसी",
+            "चाँदी जैसी",
+            "silver shoot",
+            "onion leaf",
+            "onion shoot"
+          ],
+          "w": 3
+        }
+      ],
+      "cause_en": "A small fly's maggot turns the growing tiller into a hollow tube like an onion leaf (silver shoot).",
+      "cause_te": "చిన్న ఈగ పిల్ల పురుగు వల్ల పిలక ఉల్లి ఆకులా బోలుగా మారుతుంది (వెండి కొమ్మ).",
+      "treatment": {
+        "product": "Thiamethoxam 25% WG",
+        "dose_per_litre": "0.2 g",
+        "dose_te": "ఒక లీటరు నీటికి 0.2 గ్రాములు (10 లీటర్లకు 2 గ్రాములు)",
+        "cost_note": "Resistant varieties are the cheapest control"
+      },
+      "waiting_days": 14,
+      "followup_en": "Do tillers look like onion leaves (silvery hollow tubes) instead of normal leaves?",
+      "followup_te": "పిలకలు సాధారణ ఆకుల బదులు ఉల్లి ఆకుల్లా (వెండి రంగు బోలు గొట్టాలు) కనిపిస్తున్నాయా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.52; symptoms: TNAU Agritech",
+      "i18n": {
+        "hi": {
+          "name": "धान की गॉल मिज (गंगई)",
+          "cause": "छोटी मक्खी की सूंडी से बढ़ता कल्ला प्याज की पत्ती जैसा खोखला हो जाता है (चाँदी जैसी नली)।",
+          "dose": "1 लीटर पानी में 0.2 ग्राम (10 लीटर में 2 ग्राम)",
+          "followup": "क्या कल्ले सामान्य पत्तियों की जगह प्याज की पत्ती जैसी चाँदी रंग की नली बन गए हैं?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Insecticides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/MUP%20%28insecticide%29%20%2030.09.2026.pdf",
+          "page": 52,
+          "row": "Thiamethoxam 25% WG, Rice stem borer, gall midge, leaf folder, planthoppers: 100 g/ha in 500-750 L (0.13-0.2 g/L); waiting period 14 days"
+        },
+        {
+          "title": "TNAU Agritech: Insect pests of field crops and their management",
+          "url": "https://agritech.tnau.ac.in/pdf/6.pdf",
+          "page": null,
+          "row": "Symptoms"
+        }
+      ],
+      "pest_terms": [
+        "gall midge"
+      ]
+    },
+    {
+      "id": "rice_false_smut",
+      "crops": [
+        "rice"
+      ],
+      "verified": false,
+      "name_en": "Rice false smut",
+      "name_te": "వరి కాటుక తెగులు",
+      "symptoms": [
+        {
+          "k": [
+            "కాటుక తెగులు",
+            "ఫాల్స్ స్మట్",
+            "आभासी कंड",
+            "हल्दी रोग",
+            "फॉल्स स्मट",
+            "false smut"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "పసుపు ఉండ",
+            "ఆకుపచ్చ ఉండ",
+            "గింజలు ఉండలు",
+            "पीले गोले",
+            "हरे गोले",
+            "दाने गोले",
+            "yellow balls",
+            "green balls",
+            "smut balls"
+          ],
+          "w": 3
+        }
+      ],
+      "cause_en": "Fungus turns a few grains into yellow, later greenish-black velvety balls; rain at flowering favours it.",
+      "cause_te": "శిలీంధ్రం వల్ల కొన్ని గింజలు పసుపు, తర్వాత ఆకుపచ్చ-నలుపు ఉండలుగా మారతాయి; పూత దశలో వర్షం వల్ల పెరుగుతుంది.",
+      "treatment": {
+        "product": "Copper oxychloride 50% WP",
+        "dose_per_litre": "3 g",
+        "dose_te": "ఒక లీటరు నీటికి 3 గ్రాములు (10 లీటర్లకు 30 గ్రాములు)",
+        "cost_note": "Spray at boot leaf and early flowering; avoid late urea"
+      },
+      "waiting_days": 10,
+      "followup_en": "Are some grains in the ear turned into yellow or dark green powdery balls?",
+      "followup_te": "కంకిలో కొన్ని గింజలు పసుపు లేదా ముదురు ఆకుపచ్చ పొడి ఉండలుగా మారాయా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.9; symptoms: TNAU Agritech",
+      "i18n": {
+        "hi": {
+          "name": "धान का आभासी कंड (हल्दी रोग)",
+          "cause": "फफूंद से कुछ दाने पीले, फिर हरे-काले मखमली गोलों में बदल जाते हैं; फूल आने पर बारिश से बढ़ता है।",
+          "dose": "1 लीटर पानी में 3 ग्राम (10 लीटर में 30 ग्राम)",
+          "followup": "क्या बाली के कुछ दाने पीले या गहरे हरे पाउडर जैसे गोलों में बदल गए हैं?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Fungicides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/Fungicide%20MUP%20%20as%20on%2030.09.2026.pdf",
+          "page": 9,
+          "row": "Copper oxychloride 50% WP, Rice false smut & bacterial leaf blight: per-litre dose 3 g; waiting period 10 days"
+        },
+        {
+          "title": "TNAU Agritech: False smut of rice",
+          "url": "https://agritech.tnau.ac.in/expert_system/paddy/cpdisfalsegraindis.html",
+          "page": null,
+          "row": "Symptoms"
+        }
+      ],
+      "pest_terms": [
+        "false smut"
+      ],
+      "expert_check": "Spray at the boot leaf stage; it cannot cure grains already infected."
+    },
+    {
+      "id": "rice_brown_spot",
+      "crops": [
+        "rice"
+      ],
+      "verified": false,
+      "name_en": "Rice brown spot",
+      "name_te": "వరి గోధుమ మచ్చ తెగులు",
+      "symptoms": [
+        {
+          "k": [
+            "గోధుమ మచ్చ తెగులు",
+            "గోధుమ రంగు మచ్చ",
+            "भूरा धब्बा",
+            "ब्राउन स्पॉट",
+            "brown spot"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "నువ్వుల గింజ",
+            "నువ్వు గింజ",
+            "తిల",
+            "तिल के दाने",
+            "तिल जैसे",
+            "sesame",
+            "oval spots"
+          ],
+          "w": 3
+        }
+      ],
+      "cause_en": "Fungus carried on seed; worse in poor or potassium-deficient soils.",
+      "cause_te": "విత్తనం ద్వారా వచ్చే శిలీంధ్రం; పోషకాలు, పొటాష్ తక్కువ ఉన్న నేలల్లో ఎక్కువ.",
+      "treatment": {
+        "product": "Mancozeb 68% + Hexaconazole 4% WG",
+        "dose_per_litre": "2.5 g",
+        "dose_te": "ఒక లీటరు నీటికి 2.5 గ్రాములు (10 లీటర్లకు 25 గ్రాములు)",
+        "cost_note": "Treat seed and give potash"
+      },
+      "waiting_days": 30,
+      "followup_en": "Are there many small oval brown spots, like sesame seeds, on the leaves?",
+      "followup_te": "ఆకులపై నువ్వుల గింజల్లా చిన్న అండాకారపు గోధుమ మచ్చలు చాలా ఉన్నాయా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.72; symptoms: TNAU Agritech",
+      "i18n": {
+        "hi": {
+          "name": "धान का भूरा धब्बा रोग",
+          "cause": "बीज से आने वाली फफूंद; कमज़ोर और पोटाश की कमी वाली मिट्टी में ज़्यादा।",
+          "dose": "1 लीटर पानी में 2.5 ग्राम (10 लीटर में 25 ग्राम)",
+          "followup": "क्या पत्तियों पर तिल के दाने जैसे छोटे अंडाकार भूरे धब्बे बहुत हैं?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Fungicides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/Fungicide%20MUP%20%20as%20on%2030.09.2026.pdf",
+          "page": 72,
+          "row": "Mancozeb 68% + Hexaconazole 4% WG, Rice blast, sheath blight, brown spot: 1250 g/ha in 500 L (2.5 g/L); waiting period 30 days"
+        },
+        {
+          "title": "TNAU Agritech: Brown spot of rice",
+          "url": "http://www.agritech.tnau.ac.in/expert_system/paddy/cpdisbrownspot.html",
+          "page": null,
+          "row": "Symptoms"
+        }
+      ],
+      "pest_terms": [
+        "brown spot"
+      ]
+    },
+    {
+      "id": "cotton_jassids",
+      "crops": [
+        "cotton"
+      ],
+      "verified": false,
+      "name_en": "Cotton jassids (leafhoppers)",
+      "name_te": "పత్తి పచ్చదోమ",
+      "symptoms": [
+        {
+          "k": [
+            "పచ్చదోమ",
+            "పచ్చ దోమ",
+            "జాసిడ్",
+            "हरा तेला",
+            "जैसिड",
+            "तेला",
+            "jassid",
+            "leafhopper",
+            "leaf hopper"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "అంచులు ఎరుపు",
+            "ఆకులు ఎర్రబడ",
+            "అంచులు పసుపు",
+            "किनारे लाल",
+            "किनारे पीले",
+            "पत्ते लाल",
+            "edges turning red",
+            "red leaves",
+            "leaves turning red",
+            "hopper burn"
+          ],
+          "w": 3
+        }
+      ],
+      "cause_en": "Small green hoppers suck sap from the leaf underside; leaf edges turn yellow, then red and curl down.",
+      "cause_te": "చిన్న పచ్చని దోమలు ఆకు అడుగున రసం పీలుస్తాయి; ఆకు అంచులు పసుపు, తర్వాత ఎరుపుగా మారి కిందకు ముడుచుకుంటాయి.",
+      "treatment": {
+        "product": "Fipronil 5% SC",
+        "dose_per_litre": "3 ml",
+        "dose_te": "ఒక లీటరు నీటికి 3 మి.లీ. (10 లీటర్లకు 30 మి.లీ.)",
+        "cost_note": "Grow jassid-tolerant hairy varieties"
+      },
+      "waiting_days": 6,
+      "followup_en": "Are the leaf edges turning yellow or red and curling down, with small green insects that walk sideways?",
+      "followup_te": "ఆకు అంచులు పసుపు లేదా ఎరుపుగా మారి కిందకు ముడుచుకుంటున్నాయా, పక్కకు నడిచే చిన్న పచ్చని పురుగులు ఉన్నాయా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.30; symptoms: TNAU Agritech",
+      "i18n": {
+        "hi": {
+          "name": "कपास का हरा तेला (जैसिड)",
+          "cause": "छोटे हरे कीट पत्ती के नीचे रस चूसते हैं; किनारे पीले, फिर लाल होकर नीचे मुड़ते हैं।",
+          "dose": "1 लीटर पानी में 3 मि.ली. (10 लीटर में 30 मि.ली.)",
+          "followup": "क्या पत्ती के किनारे पीले या लाल होकर नीचे मुड़ रहे हैं, और तिरछे चलने वाले छोटे हरे कीड़े हैं?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Insecticides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/MUP%20%28insecticide%29%20%2030.09.2026.pdf",
+          "page": 30,
+          "row": "Fipronil 05% SC, Cotton aphid, jassid, thrips, whitefly: 1500-2000 ml/ha in 500 L (3-4 ml/L); waiting period 6 days"
+        },
+        {
+          "title": "TNAU Agritech: Pests of cotton",
+          "url": "https://agritech.tnau.ac.in/crop_protection/crop_prot_crop_insectpest%20_cotton.html",
+          "page": null,
+          "row": "Symptoms"
+        }
+      ],
+      "pest_terms": [
+        "jassid"
+      ]
+    },
+    {
+      "id": "cotton_american_bollworm",
+      "crops": [
+        "cotton"
+      ],
+      "verified": false,
+      "name_en": "Cotton American bollworm (Helicoverpa)",
+      "name_te": "పత్తి శనగపచ్చ పురుగు",
+      "symptoms": [
+        {
+          "k": [
+            "శనగపచ్చ పురుగు",
+            "శనగ పచ్చ పురుగు",
+            "అమెరికన్ కాయతొలుచు",
+            "अमेरिकन सुंडी",
+            "हेलिकोवर्पा",
+            "american bollworm",
+            "helicoverpa"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "కాయలకు పెద్ద రంధ్ర",
+            "కాయల్లో రంధ్ర",
+            "टिंडों में बड़े छेद",
+            "बड़े छेद",
+            "big holes in the bolls",
+            "holes in bolls"
+          ],
+          "w": 3
+        }
+      ],
+      "cause_en": "Green to brown striped caterpillars bore big holes into squares and bolls, with half their body outside.",
+      "cause_te": "ఆకుపచ్చ నుంచి గోధుమ రంగు చారల పురుగులు మొగ్గలు, కాయలకు పెద్ద రంధ్రాలు చేసి సగం శరీరం బయట ఉంచి తింటాయి.",
+      "treatment": {
+        "product": "Chlorantraniliprole 18.5% SC",
+        "dose_per_litre": "0.3 ml",
+        "dose_te": "ఒక లీటరు నీటికి 0.3 మి.లీ. (10 లీటర్లకు 3 మి.లీ.)",
+        "cost_note": "Pheromone traps and bird perches first"
+      },
+      "waiting_days": 9,
+      "followup_en": "Are there big round holes in the bolls with a green or brown caterpillar half outside?",
+      "followup_te": "కాయలకు పెద్ద గుండ్రటి రంధ్రాలు ఉండి, సగం బయట ఉన్న ఆకుపచ్చ లేదా గోధుమ రంగు పురుగు కనిపిస్తుందా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.12; symptoms: TNAU Agritech",
+      "i18n": {
+        "hi": {
+          "name": "कपास की अमेरिकन सुंडी",
+          "cause": "हरी से भूरी धारीदार इल्लियाँ कलियों और टिंडों में बड़े छेद कर आधा शरीर बाहर रखकर खाती हैं।",
+          "dose": "1 लीटर पानी में 0.3 मि.ली. (10 लीटर में 3 मि.ली.)",
+          "followup": "क्या टिंडों में बड़े गोल छेद हैं और हरी या भूरी इल्ली आधी बाहर दिखती है?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Insecticides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/MUP%20%28insecticide%29%20%2030.09.2026.pdf",
+          "page": 12,
+          "row": "Chlorantraniliprole 18.50% SC, Cotton American bollworm, spotted bollworm, tobacco caterpillar: 150 ml/ha in 500 L (0.3 ml/L); waiting period 9 days"
+        },
+        {
+          "title": "TNAU Agritech: Pests of cotton",
+          "url": "https://agritech.tnau.ac.in/crop_protection/crop_prot_crop_insectpest%20_cotton.html",
+          "page": null,
+          "row": "Symptoms"
+        }
+      ],
+      "pest_terms": [
+        "american bollworm",
+        "helicoverpa"
+      ]
+    },
+    {
+      "id": "cotton_mealybug",
+      "crops": [
+        "cotton"
+      ],
+      "verified": false,
+      "name_en": "Cotton mealybug",
+      "name_te": "పత్తి పిండి నల్లి",
+      "symptoms": [
+        {
+          "k": [
+            "పిండి నల్లి",
+            "పిండినల్లి",
+            "మిలీబగ్",
+            "मिलीबग",
+            "मिली बग",
+            "चूर्णी",
+            "mealybug",
+            "mealy bug"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "తెల్లని పిండి",
+            "పిండి లాంటి",
+            "सफेद आटे",
+            "रुई जैसे कीट",
+            "white cottony",
+            "cottony insects",
+            "white waxy"
+          ],
+          "w": 3
+        }
+      ],
+      "cause_en": "White waxy insects cluster on stems and leaves, suck sap and stunt the plant; ants spread them.",
+      "cause_te": "తెల్లని మైనపు పురుగులు కాండం, ఆకులపై గుంపులుగా రసం పీలుస్తాయి; చీమలు వీటిని వ్యాపింపజేస్తాయి.",
+      "treatment": {
+        "product": "Buprofezin 22% + Fipronil 3% SC",
+        "dose_per_litre": "2 ml",
+        "dose_te": "ఒక లీటరు నీటికి 2 మి.లీ. (10 లీటర్లకు 20 మి.లీ.)",
+        "cost_note": "Remove and burn infested plants early"
+      },
+      "waiting_days": 17,
+      "followup_en": "Are there white cottony or flour-like insects in clusters on the stems?",
+      "followup_te": "కాండంపై గుంపులుగా తెల్లని పిండి లాంటి పురుగులు ఉన్నాయా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.60; symptoms: TNAU Agritech",
+      "i18n": {
+        "hi": {
+          "name": "कपास का मिलीबग",
+          "cause": "सफेद मोम जैसे कीट तनों और पत्तियों पर झुंड में रस चूसते हैं; चींटियाँ इन्हें फैलाती हैं।",
+          "dose": "1 लीटर पानी में 2 मि.ली. (10 लीटर में 20 मि.ली.)",
+          "followup": "क्या तनों पर झुंड में सफेद रुई या आटे जैसे कीट हैं?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Insecticides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/MUP%20%28insecticide%29%20%2030.09.2026.pdf",
+          "page": 60,
+          "row": "Buprofezin 22% + Fipronil 3% SC, Cotton mealy bugs & thrips: per-litre dose 2 ml; waiting period 17 days"
+        },
+        {
+          "title": "TNAU Agritech: Pests of cotton",
+          "url": "https://agritech.tnau.ac.in/crop_protection/crop_prot_crop_insectpest%20_cotton.html",
+          "page": null,
+          "row": "Symptoms"
+        }
+      ],
+      "pest_terms": [
+        "mealy"
+      ]
+    },
+    {
+      "id": "chilli_mites",
+      "crops": [
+        "chilli"
+      ],
+      "verified": false,
+      "name_en": "Chilli yellow mite",
+      "name_te": "మిరప నల్లి (కిందకు ముడత)",
+      "symptoms": [
+        {
+          "k": [
+            "నల్లి",
+            "మైట్",
+            "माइट",
+            "कुटकी",
+            "मकड़ी",
+            "mite",
+            "mites"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "కిందకు ముడత",
+            "కిందికి ముడత",
+            "కిందకు ముడుచు",
+            "नीचे की ओर मुड़",
+            "नीचे मुड़",
+            "curling downwards",
+            "curl down",
+            "downward curl"
+          ],
+          "w": 3
+        }
+      ],
+      "cause_en": "Tiny mites under the leaves make leaves curl downwards, narrow and shiny; worse in dry weather.",
+      "cause_te": "ఆకుల అడుగున చిన్న నల్లులు; ఆకులు కిందకు ముడుచుకుని సన్నగా, మెరుస్తూ ఉంటాయి; పొడి వాతావరణంలో ఎక్కువ.",
+      "treatment": {
+        "product": "Diafenthiuron 50% WP",
+        "dose_per_litre": "1 g",
+        "dose_te": "ఒక లీటరు నీటికి 1 గ్రాములు (10 లీటర్లకు 10 గ్రాములు)",
+        "cost_note": "Do not mix with thrips spray unless both are present"
+      },
+      "waiting_days": 3,
+      "followup_en": "Are the leaves curling downwards (edges turned under), not upwards?",
+      "followup_te": "ఆకులు పైకి కాకుండా కిందకు ముడుచుకుంటున్నాయా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.23; symptoms: TNAU Agritech",
+      "i18n": {
+        "hi": {
+          "name": "मिर्च की पीली माइट",
+          "cause": "पत्तियों के नीचे बहुत छोटी माइट; पत्तियाँ नीचे की ओर मुड़कर पतली और चमकीली हो जाती हैं; सूखे मौसम में ज़्यादा।",
+          "dose": "1 लीटर पानी में 1 ग्राम (10 लीटर में 10 ग्राम)",
+          "followup": "क्या पत्तियाँ ऊपर नहीं, नीचे की ओर मुड़ रही हैं?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Insecticides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/MUP%20%28insecticide%29%20%2030.09.2026.pdf",
+          "page": 23,
+          "row": "Diafenthiuron 50% WP, Chilli mites: 600 g/ha in 500-750 L (0.8-1.2 g/L); waiting period 3 days"
+        },
+        {
+          "title": "TNAU Agritech: Insect pests of field crops and their management",
+          "url": "https://agritech.tnau.ac.in/pdf/6.pdf",
+          "page": null,
+          "row": "Symptoms"
+        }
+      ],
+      "pest_terms": [
+        "mite"
+      ]
+    },
+    {
+      "id": "chilli_fruit_rot",
+      "crops": [
+        "chilli"
+      ],
+      "verified": false,
+      "name_en": "Chilli fruit rot and die-back (anthracnose)",
+      "name_te": "మిరప కాయకుళ్ళు, కొమ్మఎండు తెగులు",
+      "symptoms": [
+        {
+          "k": [
+            "కాయకుళ్ళు",
+            "కాయ కుళ్ళు",
+            "కొమ్మఎండు",
+            "కొమ్మ ఎండు",
+            "फल सड़न",
+            "एन्थ्रेक्नोज",
+            "डाईबैक",
+            "anthracnose",
+            "fruit rot",
+            "die back",
+            "dieback"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "కాయలపై నల్లని మచ్చ",
+            "కాయలు కుళ్ళి",
+            "చివర నుంచి ఎండ",
+            "फलों पर काले धब्बे",
+            "फल सड़",
+            "सिरे से सूख",
+            "black spots on fruits",
+            "fruits rotting",
+            "drying from the tip"
+          ],
+          "w": 3
+        }
+      ],
+      "cause_en": "Fungus causes sunken dark spots on ripe fruits and drying of twigs from the tip; rain spreads it.",
+      "cause_te": "శిలీంధ్రం వల్ల పండుతున్న కాయలపై గుంటల్లా నల్లని మచ్చలు, కొమ్మలు చివర నుంచి ఎండిపోవడం; వర్షం వ్యాపింపజేస్తుంది.",
+      "treatment": {
+        "product": "Pyraclostrobin 20% WG",
+        "dose_per_litre": "1 g",
+        "dose_te": "ఒక లీటరు నీటికి 1 గ్రాములు (10 లీటర్లకు 10 గ్రాములు)",
+        "cost_note": "Remove dried twigs and rotten fruits"
+      },
+      "waiting_days": 3,
+      "followup_en": "Are there sunken dark spots on the fruits, or are branches drying from the tip?",
+      "followup_te": "కాయలపై గుంటల్లా నల్లని మచ్చలు ఉన్నాయా, లేదా కొమ్మలు చివర నుంచి ఎండిపోతున్నాయా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.27; symptoms: TNAU Agritech",
+      "i18n": {
+        "hi": {
+          "name": "मिर्च का फल सड़न (एन्थ्रेक्नोज)",
+          "cause": "फफूंद से पकते फलों पर धँसे काले धब्बे और टहनियाँ सिरे से सूखती हैं; बारिश से फैलता है।",
+          "dose": "1 लीटर पानी में 1 ग्राम (10 लीटर में 10 ग्राम)",
+          "followup": "क्या फलों पर धँसे काले धब्बे हैं, या टहनियाँ सिरे से सूख रही हैं?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Fungicides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/Fungicide%20MUP%20%20as%20on%2030.09.2026.pdf",
+          "page": 27,
+          "row": "Pyraclostrobin 20% WG, Chilli anthracnose: per-litre dose 1 g; waiting period 3 days"
+        },
+        {
+          "title": "TNAU Agritech: Management of diseases of important agriculture crops",
+          "url": "https://agritech.tnau.ac.in/pdf/8.pdf",
+          "page": null,
+          "row": "Symptoms"
+        }
+      ],
+      "pest_terms": [
+        "anthracnose",
+        "fruit rot",
+        "die back"
+      ]
+    },
+    {
+      "id": "groundnut_leaf_miner",
+      "crops": [
+        "groundnut"
+      ],
+      "verified": false,
+      "name_en": "Groundnut leaf miner",
+      "name_te": "వేరుశనగ ఆకుముడత పురుగు",
+      "symptoms": [
+        {
+          "k": [
+            "ఆకుముడత",
+            "ఆకు ముడత",
+            "ఆకు సొరంగ",
+            "पत्ती सुरंगक",
+            "लीफ माइनर",
+            "leaf miner"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "గూడు",
+            "ఆకులు అతుక్కు",
+            "బొబ్బలు",
+            "जाले",
+            "फफोले",
+            "पत्तियाँ जुड़ी",
+            "webbed leaves",
+            "webbing",
+            "blisters"
+          ],
+          "w": 3
+        }
+      ],
+      "cause_en": "Small caterpillars mine inside leaflets, then web them together; leaves look burnt from a distance.",
+      "cause_te": "చిన్న పురుగులు ఆకుల లోపల సొరంగాలు చేసి, తర్వాత ఆకులను కలిపి గూడు కడతాయి; దూరం నుంచి పంట కాలినట్లు కనిపిస్తుంది.",
+      "treatment": {
+        "product": "Deltamethrin 2.8% EC",
+        "dose_per_litre": "1 ml",
+        "dose_te": "ఒక లీటరు నీటికి 1 మి.లీ. (10 లీటర్లకు 10 మి.లీ.)",
+        "cost_note": "Light traps attract the moths"
+      },
+      "waiting_days": 3,
+      "followup_en": "Are leaflets stuck together with webs, with brown blisters on them?",
+      "followup_te": "ఆకులు గూడులా కలిపి కట్టబడి, వాటిపై గోధుమ రంగు బొబ్బలు ఉన్నాయా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.23; symptoms: TNAU Agritech",
+      "i18n": {
+        "hi": {
+          "name": "मूंगफली का पत्ती सुरंगक",
+          "cause": "छोटी इल्लियाँ पत्तियों के अंदर सुरंग बनाती हैं, फिर पत्तियों को जाले से जोड़ती हैं; दूर से फसल जली दिखती है।",
+          "dose": "1 लीटर पानी में 1 मि.ली. (10 लीटर में 10 मि.ली.)",
+          "followup": "क्या पत्तियाँ जाले से जुड़ी हैं और उन पर भूरे फफोले हैं?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Insecticides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/MUP%20%28insecticide%29%20%2030.09.2026.pdf",
+          "page": 23,
+          "row": "Deltamethrin 02.80% EC, Groundnut leaf miner: per-litre dose 0.83-1.25 ml; waiting period 3 days"
+        },
+        {
+          "title": "TNAU Agritech: Insect pests of field crops and their management",
+          "url": "https://agritech.tnau.ac.in/pdf/6.pdf",
+          "page": null,
+          "row": "Symptoms"
+        }
+      ],
+      "pest_terms": [
+        "leaf miner"
+      ]
+    },
+    {
+      "id": "groundnut_spodoptera",
+      "crops": [
+        "groundnut"
+      ],
+      "verified": false,
+      "name_en": "Groundnut tobacco caterpillar (Spodoptera)",
+      "name_te": "వేరుశనగ పొగాకు లద్దె పురుగు",
+      "symptoms": [
+        {
+          "k": [
+            "పొగాకు లద్దె",
+            "లద్దె పురుగు",
+            "స్పోడోప్టెరా",
+            "तंबाकू इल्ली",
+            "स्पोडोप्टेरा",
+            "tobacco caterpillar",
+            "spodoptera",
+            "cutworm"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "రాత్రి ఆకులు తిన",
+            "ఆకులు తినేస",
+            "रात में पत्ते",
+            "पत्ते खा",
+            "eating leaves at night",
+            "leaves eaten"
+          ],
+          "w": 3
+        }
+      ],
+      "cause_en": "Caterpillars hide in soil by day and eat leaves at night; young ones scrape leaves in groups.",
+      "cause_te": "పురుగులు పగలు నేలలో దాక్కుని రాత్రి ఆకులు తింటాయి; చిన్న పురుగులు గుంపులుగా ఆకులను గీకుతాయి.",
+      "treatment": {
+        "product": "Chlorantraniliprole 18.5% SC",
+        "dose_per_litre": "0.3 ml",
+        "dose_te": "ఒక లీటరు నీటికి 0.3 మి.లీ. (10 లీటర్లకు 3 మి.లీ.)",
+        "cost_note": "Collect egg masses; castor as a trap crop"
+      },
+      "waiting_days": 28,
+      "followup_en": "Are leaves eaten at night, with dark caterpillars hiding in the soil by day?",
+      "followup_te": "రాత్రి ఆకులు తినేసి, పగలు నేలలో దాక్కునే నల్లటి పురుగులు ఉన్నాయా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.12; symptoms: TNAU Agritech",
+      "i18n": {
+        "hi": {
+          "name": "मूंगफली की तंबाकू इल्ली",
+          "cause": "इल्लियाँ दिन में मिट्टी में छिपकर रात को पत्ते खाती हैं; छोटी इल्लियाँ झुंड में पत्तियाँ खुरचती हैं।",
+          "dose": "1 लीटर पानी में 0.3 मि.ली. (10 लीटर में 3 मि.ली.)",
+          "followup": "क्या रात में पत्ते खाए जा रहे हैं और दिन में मिट्टी में काली इल्लियाँ छिपी रहती हैं?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Insecticides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/MUP%20%28insecticide%29%20%2030.09.2026.pdf",
+          "page": 12,
+          "row": "Chlorantraniliprole 18.50% SC, Groundnut tobacco caterpillar (Spodoptera litura): 150 ml/ha in 500 L (0.3 ml/L); waiting period 28 days"
+        },
+        {
+          "title": "TNAU Agritech: Insect pests of field crops and their management",
+          "url": "https://agritech.tnau.ac.in/pdf/6.pdf",
+          "page": null,
+          "row": "Symptoms"
+        }
+      ],
+      "pest_terms": [
+        "spodoptera",
+        "tobacco caterpillar"
+      ]
+    },
+    {
+      "id": "tomato_late_blight",
+      "crops": [
+        "tomato"
+      ],
+      "verified": false,
+      "name_en": "Tomato late blight",
+      "name_te": "టమాటా ఆలస్యపు ఆకుమాడు తెగులు",
+      "symptoms": [
+        {
+          "k": [
+            "ఆలస్యపు ఆకుమాడు",
+            "లేట్ బ్లైట్",
+            "पछेती झुलसा",
+            "लेट ब्लाइट",
+            "late blight"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "నల్లని తడి మచ్చ",
+            "నీటి మచ్చ",
+            "काले गीले धब्बे",
+            "पानी जैसे धब्बे",
+            "water soaked",
+            "water-soaked",
+            "dark wet patches"
+          ],
+          "w": 3
+        }
+      ],
+      "cause_en": "Water-mould spreading fast in cool, wet weather: large dark water-soaked patches on leaves, stems and fruits.",
+      "cause_te": "చల్లని, తడి వాతావరణంలో వేగంగా వ్యాపిస్తుంది: ఆకులు, కాండం, కాయలపై పెద్ద నల్లని నీటి మచ్చలు.",
+      "treatment": {
+        "product": "Azoxystrobin 23% SC",
+        "dose_per_litre": "1 ml",
+        "dose_te": "ఒక లీటరు నీటికి 1 మి.లీ. (10 లీటర్లకు 10 మి.లీ.)",
+        "cost_note": "Stake plants; avoid overhead watering"
+      },
+      "waiting_days": 3,
+      "followup_en": "Are there large dark wet-looking patches on leaves, with white growth underneath in the morning?",
+      "followup_te": "ఆకులపై పెద్ద నల్లని తడి మచ్చలు, ఉదయం అడుగున తెల్లని బూజు ఉందా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.2; symptoms: TNAU Agritech",
+      "i18n": {
+        "hi": {
+          "name": "टमाटर का पछेती झुलसा",
+          "cause": "ठंडे, नम मौसम में तेज़ी से फैलता है: पत्तियों, तनों और फलों पर बड़े काले पानी जैसे धब्बे।",
+          "dose": "1 लीटर पानी में 1 मि.ली. (10 लीटर में 10 मि.ली.)",
+          "followup": "क्या पत्तियों पर बड़े काले गीले धब्बे हैं और सुबह नीचे सफेद फफूंद दिखती है?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Fungicides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/Fungicide%20MUP%20%20as%20on%2030.09.2026.pdf",
+          "page": 2,
+          "row": "Azoxystrobin 23% SC, Tomato early & late blight: per-litre dose 1 ml; waiting period 3 days"
+        },
+        {
+          "title": "TNAU Agritech: Diseases of tomato",
+          "url": "https://agritech.tnau.ac.in/crop_protection/crop_prot_crop%20diseases_veg_tomato.html",
+          "page": null,
+          "row": "Symptoms"
+        }
+      ],
+      "pest_terms": [
+        "late blight"
+      ]
+    },
+    {
+      "id": "tomato_leaf_miner",
+      "crops": [
+        "tomato"
+      ],
+      "verified": false,
+      "name_en": "Tomato leaf miner",
+      "name_te": "టమాటా ఆకు సొరంగ పురుగు",
+      "symptoms": [
+        {
+          "k": [
+            "ఆకు సొరంగ",
+            "సర్పిలాకార",
+            "పాము పొడ",
+            "पत्ती सुरंगक",
+            "लीफ माइनर",
+            "leaf miner",
+            "serpentine"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "తెల్లని వంకర గీత",
+            "వంకర గీతలు",
+            "टेढ़ी-मेढ़ी",
+            "सफेद लकीरें",
+            "zig zag lines",
+            "zigzag lines",
+            "white lines"
+          ],
+          "w": 3
+        }
+      ],
+      "cause_en": "Tiny maggots make white winding tunnels inside the leaves.",
+      "cause_te": "చిన్న పురుగులు ఆకుల లోపల తెల్లని వంకర గీతల్లా సొరంగాలు చేస్తాయి.",
+      "treatment": {
+        "product": "Cyantraniliprole 10.26% OD",
+        "dose_per_litre": "1.8 ml",
+        "dose_te": "ఒక లీటరు నీటికి 1.8 మి.లీ. (10 లీటర్లకు 18 మి.లీ.)",
+        "cost_note": "Remove mined leaves early; yellow sticky traps"
+      },
+      "waiting_days": 3,
+      "followup_en": "Are there white zig-zag lines inside the leaves?",
+      "followup_te": "ఆకుల లోపల తెల్లని వంకర గీతలు ఉన్నాయా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.18; symptoms: TNAU Agritech",
+      "i18n": {
+        "hi": {
+          "name": "टमाटर का पत्ती सुरंगक",
+          "cause": "छोटी सूंडियाँ पत्तियों के अंदर सफेद टेढ़ी-मेढ़ी सुरंगें बनाती हैं।",
+          "dose": "1 लीटर पानी में 1.8 मि.ली. (10 लीटर में 18 मि.ली.)",
+          "followup": "क्या पत्तियों के अंदर सफेद टेढ़ी-मेढ़ी लकीरें हैं?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Insecticides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/MUP%20%28insecticide%29%20%2030.09.2026.pdf",
+          "page": 18,
+          "row": "Cyantraniliprole 10.26% OD, Tomato leaf miner, aphids, whitefly, fruit borer: per-litre dose 1.8 ml; waiting period 3 days"
+        },
+        {
+          "title": "TNAU Agritech: Insect pests of field crops and their management",
+          "url": "https://agritech.tnau.ac.in/pdf/6.pdf",
+          "page": null,
+          "row": "Symptoms"
+        }
+      ],
+      "pest_terms": [
+        "leaf miner"
+      ]
+    },
+    {
+      "id": "maize_stem_borer",
+      "crops": [
+        "maize"
+      ],
+      "verified": false,
+      "name_en": "Maize stem borer",
+      "name_te": "మొక్కజొన్న కాండం తొలుచు పురుగు",
+      "symptoms": [
+        {
+          "k": [
+            "కాండం తొలుచు",
+            "కాండం తొలిచే",
+            "तना छेदक",
+            "तना बेधक",
+            "stem borer",
+            "stemborer"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "వరుస రంధ్రాలు",
+            "వరుసగా రంధ్ర",
+            "మొవ్వ ఎండ",
+            "कतार में छेद",
+            "गोभ सूख",
+            "rows of holes",
+            "shot holes",
+            "dead heart"
+          ],
+          "w": 3
+        }
+      ],
+      "cause_en": "Caterpillars make rows of small holes in young leaves, then bore the stem; the centre shoot dries (dead heart).",
+      "cause_te": "పురుగులు లేత ఆకులకు వరుసగా చిన్న రంధ్రాలు చేసి, తర్వాత కాండం తొలుస్తాయి; మధ్య మొవ్వ ఎండుతుంది.",
+      "treatment": {
+        "product": "Chlorantraniliprole 18.5% SC",
+        "dose_per_litre": "0.4 ml",
+        "dose_te": "ఒక లీటరు నీటికి 0.4 మి.లీ. (10 లీటర్లకు 4 మి.లీ.)",
+        "cost_note": "Remove and destroy dead hearts"
+      },
+      "waiting_days": 10,
+      "followup_en": "Are there rows of small holes on the leaves, or is the centre shoot dry?",
+      "followup_te": "ఆకులపై వరుసగా చిన్న రంధ్రాలు ఉన్నాయా, లేదా మధ్య మొవ్వ ఎండిపోయిందా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.12; symptoms: TNAU Agritech",
+      "i18n": {
+        "hi": {
+          "name": "मक्का का तना छेदक",
+          "cause": "इल्लियाँ नई पत्तियों में कतार में छोटे छेद करती हैं, फिर तना छेदती हैं; बीच का गोभ सूख जाता है।",
+          "dose": "1 लीटर पानी में 0.4 मि.ली. (10 लीटर में 4 मि.ली.)",
+          "followup": "क्या पत्तियों पर कतार में छोटे छेद हैं, या बीच का गोभ सूख गया है?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Insecticides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/MUP%20%28insecticide%29%20%2030.09.2026.pdf",
+          "page": 12,
+          "row": "Chlorantraniliprole 18.50% SC, Maize spotted & pink stem borer, fall armyworm: 200 ml/ha in 500 L (0.4 ml/L); waiting period 10 days"
+        },
+        {
+          "title": "TNAU Agritech: Insect pests of field crops and their management",
+          "url": "https://agritech.tnau.ac.in/pdf/6.pdf",
+          "page": null,
+          "row": "Symptoms"
+        }
+      ],
+      "pest_terms": [
+        "stem borer"
+      ]
+    },
+    {
+      "id": "maize_leaf_blight",
+      "crops": [
+        "maize"
+      ],
+      "verified": false,
+      "name_en": "Maize leaf blight (turcicum)",
+      "name_te": "మొక్కజొన్న ఆకుమాడు తెగులు",
+      "symptoms": [
+        {
+          "k": [
+            "ఆకుమాడు",
+            "ఆకు మాడు",
+            "టర్సికమ్",
+            "पत्ती झुलसा",
+            "टर्सिकम",
+            "leaf blight",
+            "turcicum"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "చుట్ట ఆకార",
+            "పొడవైన మచ్చ",
+            "सिगार जैसे",
+            "लंबे धब्बे",
+            "cigar shaped",
+            "long spots",
+            "long lesions"
+          ],
+          "w": 3
+        }
+      ],
+      "cause_en": "Fungus makes long cigar-shaped grey-brown spots on leaves; cool humid weather favours it.",
+      "cause_te": "శిలీంధ్రం వల్ల ఆకులపై పొడవైన చుట్ట ఆకారపు బూడిద-గోధుమ మచ్చలు; చల్లని తేమ వాతావరణంలో ఎక్కువ.",
+      "treatment": {
+        "product": "Kresoxim-methyl 44.3% SC",
+        "dose_per_litre": "1 ml",
+        "dose_te": "ఒక లీటరు నీటికి 1 మి.లీ. (10 లీటర్లకు 10 మి.లీ.)",
+        "cost_note": "Resistant hybrids; destroy crop residue"
+      },
+      "waiting_days": 25,
+      "followup_en": "Are there long boat- or cigar-shaped grey-brown spots on the leaves?",
+      "followup_te": "ఆకులపై పొడవైన పడవ లేదా చుట్ట ఆకారపు బూడిద-గోధుమ మచ్చలు ఉన్నాయా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.17; symptoms: TNAU Agritech",
+      "i18n": {
+        "hi": {
+          "name": "मक्का का पत्ती झुलसा",
+          "cause": "फफूंद से पत्तियों पर लंबे सिगार जैसे स्लेटी-भूरे धब्बे; ठंडे नम मौसम में ज़्यादा।",
+          "dose": "1 लीटर पानी में 1 मि.ली. (10 लीटर में 10 मि.ली.)",
+          "followup": "क्या पत्तियों पर लंबे नाव या सिगार जैसे स्लेटी-भूरे धब्बे हैं?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Fungicides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/Fungicide%20MUP%20%20as%20on%2030.09.2026.pdf",
+          "page": 17,
+          "row": "Kresoxim-methyl 44.3% SC, Maize turcicum leaf blight & rust: per-litre dose 1 ml; waiting period 25 days"
+        },
+        {
+          "title": "TNAU Agritech: Management of diseases of important agriculture crops",
+          "url": "https://agritech.tnau.ac.in/pdf/8.pdf",
+          "page": null,
+          "row": "Symptoms"
+        }
+      ],
+      "pest_terms": [
+        "turcicum",
+        "leaf blight"
+      ]
+    },
+    {
+      "id": "brinjal_shoot_fruit_borer",
+      "crops": [
+        "vegetable"
+      ],
+      "verified": false,
+      "name_en": "Brinjal shoot and fruit borer",
+      "name_te": "వంగ కొమ్మ, కాయ తొలుచు పురుగు",
+      "symptoms": [
+        {
+          "k": [
+            "కొమ్మ, కాయ తొలుచు",
+            "కొమ్మ తొలుచు",
+            "తల వాలు",
+            "तना एवं फल छेदक",
+            "तना और फल छेदक",
+            "शीर्ष छेदक",
+            "shoot and fruit borer",
+            "fruit and shoot borer",
+            "shoot borer"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "కొమ్మలు వడల",
+            "కొమ్మ చివర్లు వాల",
+            "टहनियाँ मुरझा",
+            "टहनी मुरझा",
+            "shoots wilting",
+            "wilting shoots",
+            "drooping shoots"
+          ],
+          "w": 3
+        }
+      ],
+      "cause_en": "A pink caterpillar bores into tender shoots, which wilt and droop, and later into fruits.",
+      "cause_te": "గులాబీ రంగు పురుగు లేత కొమ్మల్లోకి తొలిచి వాటిని వడలిపోయేలా చేస్తుంది, తర్వాత కాయల్లోకి వెళ్తుంది.",
+      "treatment": {
+        "product": "Emamectin benzoate 5% SG",
+        "dose_per_litre": "0.4 g",
+        "dose_te": "ఒక లీటరు నీటికి 0.4 గ్రాములు (10 లీటర్లకు 4 గ్రాములు)",
+        "cost_note": "Clip and destroy wilted shoots weekly; pheromone traps"
+      },
+      "waiting_days": 3,
+      "followup_en": "Are the tender shoot tips wilting and drooping, with holes in the fruits?",
+      "followup_te": "లేత కొమ్మల చివర్లు వడలి వాలిపోతున్నాయా, కాయలకు రంధ్రాలు ఉన్నాయా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.25; symptoms: TNAU Agritech",
+      "i18n": {
+        "hi": {
+          "name": "बैंगन का तना एवं फल छेदक",
+          "cause": "गुलाबी इल्ली नई टहनियों में घुसती है, जो मुरझाकर लटक जाती हैं, फिर फलों में घुसती है।",
+          "dose": "1 लीटर पानी में 0.4 ग्राम (10 लीटर में 4 ग्राम)",
+          "followup": "क्या नई टहनियों के सिरे मुरझाकर लटक रहे हैं और फलों में छेद हैं?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Insecticides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/MUP%20%28insecticide%29%20%2030.09.2026.pdf",
+          "page": 25,
+          "row": "Emamectin benzoate 05% SG, Brinjal fruit and shoot borer: 200 g/ha in 500 L (0.4 g/L); waiting period 3 days"
+        },
+        {
+          "title": "TNAU Agritech: Insect pests of field crops and their management",
+          "url": "https://agritech.tnau.ac.in/pdf/6.pdf",
+          "page": null,
+          "row": "Symptoms"
+        }
+      ],
+      "pest_terms": [
+        "shoot",
+        "fruit and shoot",
+        "shoot & fruit"
+      ],
+      "expert_check": "Registered dose is for brinjal; okra's row is lower (135-170 g/ha, about 0.3 g/L)."
+    },
+    {
+      "id": "cabbage_dbm",
+      "crops": [
+        "cabbage"
+      ],
+      "verified": false,
+      "name_en": "Cabbage diamondback moth",
+      "name_te": "క్యాబేజీ డైమండ్ బ్యాక్ పురుగు",
+      "symptoms": [
+        {
+          "k": [
+            "డైమండ్ బ్యాక్",
+            "రెక్కల పురుగు",
+            "हीरक पृष्ठ",
+            "डायमंड बैक",
+            "डीबीएम",
+            "diamondback",
+            "diamond back",
+            "dbm"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "కిటికీ",
+            "ఆకులకు రంధ్ర",
+            "खिड़की जैसे",
+            "पत्तियों में छेद",
+            "window holes",
+            "holes in leaves",
+            "small green worms"
+          ],
+          "w": 3
+        }
+      ],
+      "cause_en": "Small green caterpillars eat leaves from below, leaving window-like holes; they wriggle and drop on a thread.",
+      "cause_te": "చిన్న పచ్చని పురుగులు ఆకుల అడుగు నుంచి తిని కిటికీల్లాంటి రంధ్రాలు చేస్తాయి; తాకితే దారంతో వేలాడుతాయి.",
+      "treatment": {
+        "product": "Emamectin benzoate 5% SG",
+        "dose_per_litre": "0.4 g",
+        "dose_te": "ఒక లీటరు నీటికి 0.4 గ్రాములు (10 లీటర్లకు 4 గ్రాములు)",
+        "cost_note": "Mustard as a trap crop; rotate insecticide groups"
+      },
+      "waiting_days": 3,
+      "followup_en": "Are there small window-like holes in the leaves and tiny green worms that drop on a thread?",
+      "followup_te": "ఆకులకు కిటికీల్లాంటి చిన్న రంధ్రాలు, దారంతో వేలాడే చిన్న పచ్చని పురుగులు ఉన్నాయా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.25; symptoms: TNAU Agritech",
+      "i18n": {
+        "hi": {
+          "name": "पत्तागोभी का हीरक पतंगा (DBM)",
+          "cause": "छोटी हरी इल्लियाँ नीचे से पत्ते खाकर खिड़की जैसे छेद करती हैं; छूने पर धागे से लटक जाती हैं।",
+          "dose": "1 लीटर पानी में 0.4 ग्राम (10 लीटर में 4 ग्राम)",
+          "followup": "क्या पत्तियों में खिड़की जैसे छोटे छेद हैं और धागे से लटकने वाली छोटी हरी इल्लियाँ हैं?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Insecticides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/MUP%20%28insecticide%29%20%2030.09.2026.pdf",
+          "page": 25,
+          "row": "Emamectin benzoate 05% SG, Cabbage diamond back moth: 150-200 g/ha in 500 L (0.3-0.4 g/L); waiting period 3 days"
+        },
+        {
+          "title": "TNAU Agritech: Insect pests of field crops and their management",
+          "url": "https://agritech.tnau.ac.in/pdf/6.pdf",
+          "page": null,
+          "row": "Symptoms"
+        }
+      ],
+      "pest_terms": [
+        "diamond"
+      ]
+    },
+    {
+      "id": "wheat_rust",
+      "crops": [
+        "wheat"
+      ],
+      "verified": false,
+      "name_en": "Wheat rust",
+      "name_te": "గోధుమ కుంకుమ తెగులు",
+      "symptoms": [
+        {
+          "k": [
+            "కుంకుమ తెగులు",
+            "తుప్పు తెగులు",
+            "रतुआ",
+            "गेरुई",
+            "गेरुआ",
+            "rust disease",
+            "yellow rust",
+            "brown rust",
+            "leaf rust",
+            "black rust",
+            "stem rust"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "పసుపు పొడి",
+            "నారింజ పొడి",
+            "వేళ్లకు పొడి",
+            "पीला पाउडर",
+            "नारंगी पाउडर",
+            "उंगलियों पर",
+            "orange powder",
+            "yellow powder",
+            "powder on fingers"
+          ],
+          "w": 3
+        }
+      ],
+      "cause_en": "Fungus makes yellow, orange or brown powdery pustules on leaves; the powder rubs off on fingers.",
+      "cause_te": "శిలీంధ్రం వల్ల ఆకులపై పసుపు, నారింజ లేదా గోధుమ రంగు పొడి బొబ్బలు; వేళ్లకు పొడి అంటుకుంటుంది.",
+      "treatment": {
+        "product": "Propiconazole 25% EC",
+        "dose_per_litre": "0.67 ml",
+        "dose_te": "ఒక లీటరు నీటికి 0.67 మి.లీ. (10 లీటర్లకు 6.7 మి.లీ.)",
+        "cost_note": "Grow resistant varieties; spray at first pustules"
+      },
+      "waiting_days": 30,
+      "followup_en": "Does a yellow or orange-brown powder come off on your fingers when you rub the leaves?",
+      "followup_te": "ఆకులను రుద్దితే వేళ్లకు పసుపు లేదా నారింజ-గోధుమ పొడి అంటుకుంటుందా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.24; symptoms: TNAU Agritech",
+      "i18n": {
+        "hi": {
+          "name": "गेहूं का रतुआ (गेरुई)",
+          "cause": "फफूंद से पत्तियों पर पीले, नारंगी या भूरे पाउडर वाले फफोले; पाउडर उंगलियों पर लग जाता है।",
+          "dose": "1 लीटर पानी में 0.67 मि.ली. (10 लीटर में 6.7 मि.ली.)",
+          "followup": "क्या पत्ती रगड़ने पर उंगलियों पर पीला या नारंगी-भूरा पाउडर लगता है?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Fungicides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/Fungicide%20MUP%20%20as%20on%2030.09.2026.pdf",
+          "page": 24,
+          "row": "Propiconazole 25% EC, Wheat leaf (brown) rust: 500 ml/ha in 750 L (0.67 ml/L); waiting period 30 days"
+        },
+        {
+          "title": "TNAU Agritech: Management of diseases of important agriculture crops",
+          "url": "https://agritech.tnau.ac.in/pdf/8.pdf",
+          "page": null,
+          "row": "Symptoms"
+        }
+      ],
+      "pest_terms": [
+        "rust"
+      ]
+    },
+    {
+      "id": "wheat_aphid",
+      "crops": [
+        "wheat"
+      ],
+      "verified": false,
+      "name_en": "Wheat aphid",
+      "name_te": "గోధుమ పేనుబంక",
+      "symptoms": [
+        {
+          "k": [
+            "పేనుబంక",
+            "పేను బంక",
+            "माहू",
+            "मोयला",
+            "चेपा",
+            "aphid"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "జిగట",
+            "చిన్న పచ్చని పురుగు",
+            "चिपचिप",
+            "छोटे हरे कीड़े",
+            "sticky",
+            "small green insects"
+          ],
+          "w": 2
+        }
+      ],
+      "cause_en": "Colonies of small green insects suck sap from leaves and ears; sticky honeydew follows.",
+      "cause_te": "చిన్న పచ్చని పురుగుల గుంపులు ఆకులు, కంకుల నుంచి రసం పీలుస్తాయి; జిగట పదార్థం కనిపిస్తుంది.",
+      "treatment": {
+        "product": "Thiamethoxam 25% WG",
+        "dose_per_litre": "0.1 g",
+        "dose_te": "ఒక లీటరు నీటికి 0.1 గ్రాములు (10 లీటర్లకు 1 గ్రాములు)",
+        "cost_note": "Spray only above 10 aphids per tiller"
+      },
+      "waiting_days": 21,
+      "followup_en": "Are there groups of small green insects on the leaves or ears?",
+      "followup_te": "ఆకులు లేదా కంకులపై చిన్న పచ్చని పురుగుల గుంపులు ఉన్నాయా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.52; symptoms: TNAU Agritech",
+      "i18n": {
+        "hi": {
+          "name": "गेहूं का माहू",
+          "cause": "छोटे हरे कीटों के झुंड पत्तियों और बालियों से रस चूसते हैं; चिपचिपा पदार्थ दिखता है।",
+          "dose": "1 लीटर पानी में 0.1 ग्राम (10 लीटर में 1 ग्राम)",
+          "followup": "क्या पत्तियों या बालियों पर छोटे हरे कीटों के झुंड हैं?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Insecticides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/MUP%20%28insecticide%29%20%2030.09.2026.pdf",
+          "page": 52,
+          "row": "Thiamethoxam 25% WG, Wheat aphid: per-litre dose 0.1 g; waiting period 21 days"
+        },
+        {
+          "title": "TNAU Agritech: Insect pests of field crops and their management",
+          "url": "https://agritech.tnau.ac.in/pdf/6.pdf",
+          "page": null,
+          "row": "Symptoms"
+        }
+      ],
+      "pest_terms": [
+        "aphid"
+      ]
+    },
+    {
+      "id": "sugarcane_early_shoot_borer",
+      "crops": [
+        "sugarcane"
+      ],
+      "verified": false,
+      "name_en": "Sugarcane early shoot borer",
+      "name_te": "చెరకు పీక పురుగు (మొవ్వ తొలుచు పురుగు)",
+      "symptoms": [
+        {
+          "k": [
+            "పీక పురుగు",
+            "మొవ్వ తొలుచు",
+            "అగ్ర తొలుచు",
+            "अगेती तना छेदक",
+            "अगेता बेधक",
+            "early shoot borer",
+            "shoot borer"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "మధ్య ఆకు ఎండ",
+            "మొవ్వ ఎండ",
+            "దుర్వాసన",
+            "बीच की पत्ती सूख",
+            "बदबू",
+            "dead heart",
+            "bad smell",
+            "centre leaf dry"
+          ],
+          "w": 3
+        }
+      ],
+      "cause_en": "A caterpillar bores into young shoots in the first three months; the centre leaf dries and pulls out easily with a bad smell.",
+      "cause_te": "మొదటి మూడు నెలల్లో పురుగు లేత మొలకల్లోకి తొలుస్తుంది; మధ్య ఆకు ఎండి, దుర్వాసనతో సులువుగా ఊడి వస్తుంది.",
+      "treatment": {
+        "product": "Chlorantraniliprole 18.5% SC",
+        "dose_per_litre": "0.375 ml",
+        "dose_te": "ఒక లీటరు నీటికి 0.375 మి.లీ. (10 లీటర్లకు 3.75 మి.లీ.)",
+        "cost_note": "Trash mulching and earthing up in the first three months"
+      },
+      "waiting_days": 208,
+      "followup_en": "Does the dried centre leaf of young cane pull out easily and smell bad?",
+      "followup_te": "లేత చెరకులో ఎండిన మధ్య ఆకు సులువుగా ఊడి వచ్చి దుర్వాసన వస్తుందా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.12; symptoms: TNAU Agritech",
+      "i18n": {
+        "hi": {
+          "name": "गन्ने का अगेती तना छेदक",
+          "cause": "पहले तीन महीनों में इल्ली नए कल्लों में घुसती है; बीच की पत्ती सूखकर बदबू के साथ आसानी से खिंच जाती है।",
+          "dose": "1 लीटर पानी में 0.375 मि.ली. (10 लीटर में 3.75 मि.ली.)",
+          "followup": "क्या नए गन्ने की सूखी बीच की पत्ती आसानी से खिंचती है और बदबू आती है?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Insecticides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/MUP%20%28insecticide%29%20%2030.09.2026.pdf",
+          "page": 12,
+          "row": "Chlorantraniliprole 18.50% SC, Sugarcane early shoot borer & top borer: 375 ml/ha in 1000 L (0.375 ml/L); waiting period 208 days"
+        },
+        {
+          "title": "TNAU Agritech: Insect pests of field crops and their management",
+          "url": "https://agritech.tnau.ac.in/pdf/6.pdf",
+          "page": null,
+          "row": "Symptoms"
+        }
+      ],
+      "pest_terms": [
+        "early shoot borer"
+      ],
+      "expert_check": "The long waiting period (208 days) is fine because this spray is only for young cane."
+    },
+    {
+      "id": "onion_thrips",
+      "crops": [
+        "onion"
+      ],
+      "verified": false,
+      "name_en": "Onion thrips",
+      "name_te": "ఉల్లి తామర పురుగు",
+      "symptoms": [
+        {
+          "k": [
+            "తామర పురుగు",
+            "తామర",
+            "థ్రిప్స్",
+            "थ्रिप्स",
+            "चुरड़ा",
+            "thrips"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "వెండి చారలు",
+            "తెల్లని చారలు",
+            "चाँदी जैसी",
+            "सफेद धारियाँ",
+            "silvery streaks",
+            "silver streaks",
+            "white streaks"
+          ],
+          "w": 3
+        }
+      ],
+      "cause_en": "Tiny insects hide between leaves and scrape them, causing silvery-white streaks and twisted tips.",
+      "cause_te": "చిన్న పురుగులు ఆకుల మధ్య దాక్కుని గీకుతాయి; ఆకులపై వెండి-తెలుపు చారలు, చివర్లు వంకరగా మారుతాయి.",
+      "treatment": {
+        "product": "Lambda-cyhalothrin 5% EC",
+        "dose_per_litre": "1 ml",
+        "dose_te": "ఒక లీటరు నీటికి 1 మి.లీ. (10 లీటర్లకు 10 మి.లీ.)",
+        "cost_note": "Blue sticky traps; add a sticker to the spray"
+      },
+      "waiting_days": 5,
+      "followup_en": "Are there silvery-white streaks on the onion leaves?",
+      "followup_te": "ఉల్లి ఆకులపై వెండి-తెలుపు చారలు ఉన్నాయా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.39; symptoms: TNAU Agritech",
+      "i18n": {
+        "hi": {
+          "name": "प्याज का थ्रिप्स",
+          "cause": "छोटे कीट पत्तियों के बीच छिपकर खुरचते हैं; चाँदी जैसी सफेद धारियाँ और मुड़े सिरे दिखते हैं।",
+          "dose": "1 लीटर पानी में 1 मि.ली. (10 लीटर में 10 मि.ली.)",
+          "followup": "क्या प्याज की पत्तियों पर चाँदी जैसी सफेद धारियाँ हैं?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Insecticides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/MUP%20%28insecticide%29%20%2030.09.2026.pdf",
+          "page": 39,
+          "row": "Lambda-cyhalothrin 05% EC, Onion thrips: per-litre dose 0.75-1 ml; waiting period 5 days"
+        },
+        {
+          "title": "TNAU Agritech: Insect pests of field crops and their management",
+          "url": "https://agritech.tnau.ac.in/pdf/6.pdf",
+          "page": null,
+          "row": "Symptoms"
+        }
+      ],
+      "pest_terms": [
+        "thrips"
+      ]
+    },
+    {
+      "id": "onion_purple_blotch",
+      "crops": [
+        "onion"
+      ],
+      "verified": false,
+      "name_en": "Onion purple blotch",
+      "name_te": "ఉల్లి ఊదా మచ్చ తెగులు",
+      "symptoms": [
+        {
+          "k": [
+            "ఊదా మచ్చ",
+            "పర్పుల్ బ్లాచ్",
+            "बैंगनी धब्बा",
+            "बैंगनी धब्बे",
+            "पर्पल ब्लॉच",
+            "purple blotch",
+            "purple spots"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "ఊదా రంగు",
+            "ఆకులు వాలి",
+            "बैंगनी रंग",
+            "पत्तियाँ गिर",
+            "purple patches",
+            "leaves falling over"
+          ],
+          "w": 3
+        }
+      ],
+      "cause_en": "Fungus makes small white sunken spots that grow into purple patches with yellow edges; leaves fall over.",
+      "cause_te": "శిలీంధ్రం వల్ల చిన్న తెల్లని మచ్చలు పెద్దవై పసుపు అంచులతో ఊదా మచ్చలుగా మారుతాయి; ఆకులు వాలిపోతాయి.",
+      "treatment": {
+        "product": "Metiram 70% WG",
+        "dose_per_litre": "2.5 g",
+        "dose_te": "ఒక లీటరు నీటికి 2.5 గ్రాములు (10 లీటర్లకు 25 గ్రాములు)",
+        "cost_note": "Crop rotation; avoid excess nitrogen"
+      },
+      "waiting_days": 7,
+      "followup_en": "Are there purple patches with yellow borders on the onion leaves?",
+      "followup_te": "ఉల్లి ఆకులపై పసుపు అంచులతో ఊదా రంగు మచ్చలు ఉన్నాయా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.21; symptoms: TNAU Agritech",
+      "i18n": {
+        "hi": {
+          "name": "प्याज का बैंगनी धब्बा",
+          "cause": "फफूंद से छोटे सफेद धब्बे बढ़कर पीले किनारे वाले बैंगनी धब्बे बनते हैं; पत्तियाँ गिर जाती हैं।",
+          "dose": "1 लीटर पानी में 2.5 ग्राम (10 लीटर में 25 ग्राम)",
+          "followup": "क्या प्याज की पत्तियों पर पीले किनारे वाले बैंगनी धब्बे हैं?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Fungicides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/Fungicide%20MUP%20%20as%20on%2030.09.2026.pdf",
+          "page": 21,
+          "row": "Metiram 70% WG, Onion purple blotch & Stemphylium blight: per-litre dose 2.5-3 g; waiting period 7 days"
+        },
+        {
+          "title": "TNAU Agritech: Management of diseases of important agriculture crops",
+          "url": "https://agritech.tnau.ac.in/pdf/8.pdf",
+          "page": null,
+          "row": "Symptoms"
+        }
+      ],
+      "pest_terms": [
+        "purple blotch"
+      ]
+    },
+    {
+      "id": "potato_late_blight",
+      "crops": [
+        "potato"
+      ],
+      "verified": false,
+      "name_en": "Potato late blight",
+      "name_te": "బంగాళాదుంప ఆలస్యపు ఆకుమాడు తెగులు",
+      "symptoms": [
+        {
+          "k": [
+            "ఆలస్యపు ఆకుమాడు",
+            "లేట్ బ్లైట్",
+            "पछेती झुलसा",
+            "लेट ब्लाइट",
+            "late blight"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "నల్లని తడి మచ్చ",
+            "దుంపలు కుళ్ళ",
+            "काले गीले धब्बे",
+            "कंद सड़",
+            "water soaked",
+            "dark wet patches",
+            "tubers rotting"
+          ],
+          "w": 3
+        }
+      ],
+      "cause_en": "Water-mould spreading fast in cool, foggy weather: dark water-soaked patches on leaves, white growth beneath; tubers rot.",
+      "cause_te": "చల్లని, మంచు వాతావరణంలో వేగంగా వ్యాపిస్తుంది: ఆకులపై నల్లని తడి మచ్చలు, అడుగున తెల్లని బూజు; దుంపలు కుళ్ళుతాయి.",
+      "treatment": {
+        "product": "Cymoxanil 8% + Mancozeb 64% WP",
+        "dose_per_litre": "2.5 g",
+        "dose_te": "ఒక లీటరు నీటికి 2.5 గ్రాములు (10 లీటర్లకు 25 గ్రాములు)",
+        "cost_note": "Spray before fog spells; use healthy seed tubers"
+      },
+      "waiting_days": 10,
+      "followup_en": "Are there dark wet-looking patches on the leaves, spreading quickly in foggy weather?",
+      "followup_te": "మంచు వాతావరణంలో ఆకులపై నల్లని తడి మచ్చలు వేగంగా వ్యాపిస్తున్నాయా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.60; symptoms: TNAU Agritech",
+      "i18n": {
+        "hi": {
+          "name": "आलू का पछेती झुलसा",
+          "cause": "ठंडे, कोहरे वाले मौसम में तेज़ी से फैलता है: पत्तियों पर काले गीले धब्बे, नीचे सफेद फफूंद; कंद सड़ते हैं।",
+          "dose": "1 लीटर पानी में 2.5 ग्राम (10 लीटर में 25 ग्राम)",
+          "followup": "क्या कोहरे के मौसम में पत्तियों पर काले गीले धब्बे तेज़ी से फैल रहे हैं?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Fungicides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/Fungicide%20MUP%20%20as%20on%2030.09.2026.pdf",
+          "page": 60,
+          "row": "Cymoxanil 8% + Mancozeb 64% WP, Potato late blight: per-litre dose 2-3 g; waiting period 10 days"
+        },
+        {
+          "title": "TNAU Agritech: Management of diseases of important agriculture crops",
+          "url": "https://agritech.tnau.ac.in/pdf/8.pdf",
+          "page": null,
+          "row": "Symptoms"
+        }
+      ],
+      "pest_terms": [
+        "late blight"
+      ]
+    },
+    {
+      "id": "mango_hopper",
+      "crops": [
+        "mango"
+      ],
+      "verified": false,
+      "name_en": "Mango hopper",
+      "name_te": "మామిడి తేనెమంచు పురుగు",
+      "symptoms": [
+        {
+          "k": [
+            "తేనెమంచు పురుగు",
+            "తేనె మంచు",
+            "ఆకుదూకుడు",
+            "फुदका",
+            "भुनगा",
+            "हॉपर",
+            "mango hopper",
+            "hoppers",
+            "hopper"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "పూత రాల",
+            "నల్లని జిగట",
+            "बौर झड़",
+            "काली चिपचिपी",
+            "flowers dropping",
+            "sticky black leaves",
+            "sooty mould",
+            "sooty mold"
+          ],
+          "w": 3
+        }
+      ],
+      "cause_en": "Wedge-shaped hoppers suck sap from flowers; flowers drop and leaves turn black and sticky (sooty mould).",
+      "cause_te": "చీలిక ఆకారపు పురుగులు పూత నుంచి రసం పీలుస్తాయి; పూత రాలి, ఆకులు నల్లగా జిగటగా మారుతాయి.",
+      "treatment": {
+        "product": "Flonicamid 50% WG",
+        "dose_per_litre": "0.4 g",
+        "dose_te": "ఒక లీటరు నీటికి 0.4 గ్రాములు (10 లీటర్లకు 4 గ్రాములు)",
+        "cost_note": "Spray at panicle emergence; do not spray in full bloom"
+      },
+      "waiting_days": 15,
+      "followup_en": "Are the flowers dropping, with sticky black leaves and small jumping insects?",
+      "followup_te": "పూత రాలిపోతూ, ఆకులు నల్లగా జిగటగా ఉండి, చిన్న ఎగిరే పురుగులు ఉన్నాయా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.31; symptoms: TNAU Agritech",
+      "i18n": {
+        "hi": {
+          "name": "आम का फुदका (भुनगा)",
+          "cause": "कील जैसे कीट बौर से रस चूसते हैं; बौर झड़ता है और पत्तियाँ काली व चिपचिपी हो जाती हैं।",
+          "dose": "1 लीटर पानी में 0.4 ग्राम (10 लीटर में 4 ग्राम)",
+          "followup": "क्या बौर झड़ रहा है, पत्तियाँ काली-चिपचिपी हैं और छोटे उछलने वाले कीट हैं?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Insecticides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/MUP%20%28insecticide%29%20%2030.09.2026.pdf",
+          "page": 31,
+          "row": "Flonicamid 50% WG, Mango hoppers (Amritodus atkinsoni): per-litre dose 0.4 g; waiting period 15 days"
+        },
+        {
+          "title": "TNAU Agritech: Insect pests of field crops and their management",
+          "url": "https://agritech.tnau.ac.in/pdf/6.pdf",
+          "page": null,
+          "row": "Symptoms"
+        }
+      ],
+      "pest_terms": [
+        "hopper"
+      ]
+    },
+    {
+      "id": "soybean_girdle_beetle",
+      "crops": [
+        "soybean"
+      ],
+      "verified": false,
+      "name_en": "Soybean girdle beetle",
+      "name_te": "సోయాబీన్ రింగు పురుగు",
+      "symptoms": [
+        {
+          "k": [
+            "రింగు పురుగు",
+            "గర్డిల్",
+            "गर्डल बीटल",
+            "चक्र भृंग",
+            "girdle beetle",
+            "girdle"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "రెండు రింగులు",
+            "రింగు కోత",
+            "दो छल्ले",
+            "छल्ले कटे",
+            "two rings",
+            "ring cuts"
+          ],
+          "w": 3
+        }
+      ],
+      "cause_en": "The beetle cuts two rings around the leaf stalk or stem and lays an egg between them; the part above wilts.",
+      "cause_te": "పురుగు ఆకు కాడ లేదా కాండం చుట్టూ రెండు రింగులు కోసి మధ్యలో గుడ్డు పెడుతుంది; పై భాగం వడలిపోతుంది.",
+      "treatment": {
+        "product": "Thiacloprid 21.7% SC",
+        "dose_per_litre": "1.5 ml",
+        "dose_te": "ఒక లీటరు నీటికి 1.5 మి.లీ. (10 లీటర్లకు 15 మి.లీ.)",
+        "cost_note": "Remove and destroy the wilted parts"
+      },
+      "waiting_days": 17,
+      "followup_en": "Are there two ring cuts on the stem or leaf stalk, with the part above drooping?",
+      "followup_te": "కాండం లేదా ఆకు కాడపై రెండు రింగు కోతలు ఉండి, పై భాగం వాలిపోతుందా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.50; symptoms: TNAU Agritech",
+      "i18n": {
+        "hi": {
+          "name": "सोयाबीन का गर्डल बीटल (चक्र भृंग)",
+          "cause": "भृंग पत्ती की डंठल या तने पर दो छल्ले काटकर बीच में अंडा देता है; ऊपर का भाग मुरझा जाता है।",
+          "dose": "1 लीटर पानी में 1.5 मि.ली. (10 लीटर में 15 मि.ली.)",
+          "followup": "क्या तने या डंठल पर दो छल्ले कटे हैं और ऊपर का भाग लटक रहा है?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Insecticides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/MUP%20%28insecticide%29%20%2030.09.2026.pdf",
+          "page": 50,
+          "row": "Thiacloprid 21.70% SC, Soybean girdle beetle: per-litre dose 1.5 ml; waiting period 17 days"
+        },
+        {
+          "title": "TNAU Agritech: Insect pests of field crops and their management",
+          "url": "https://agritech.tnau.ac.in/pdf/6.pdf",
+          "page": null,
+          "row": "Symptoms"
+        }
+      ],
+      "pest_terms": [
+        "girdle"
+      ]
+    },
+    {
+      "id": "soybean_semilooper",
+      "crops": [
+        "soybean"
+      ],
+      "verified": false,
+      "name_en": "Soybean green semilooper",
+      "name_te": "సోయాబీన్ పచ్చ దాసరి పురుగు",
+      "symptoms": [
+        {
+          "k": [
+            "దాసరి పురుగు",
+            "సెమీలూపర్",
+            "సెమి లూపర్",
+            "सेमीलूपर",
+            "सेमी लूपर",
+            "अर्धकुंडलक",
+            "semilooper",
+            "semi looper",
+            "looper"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "వంచి నడిచే",
+            "శరీరం వంచి",
+            "मोड़कर चलने",
+            "looping",
+            "arching"
+          ],
+          "w": 3
+        }
+      ],
+      "cause_en": "Green caterpillars that walk by looping their body eat holes in leaves and flowers.",
+      "cause_te": "శరీరాన్ని వంచుతూ నడిచే పచ్చని పురుగులు ఆకులు, పూతకు రంధ్రాలు చేసి తింటాయి.",
+      "treatment": {
+        "product": "Flubendiamide 39.35% SC",
+        "dose_per_litre": "0.3 ml",
+        "dose_te": "ఒక లీటరు నీటికి 0.3 మి.లీ. (10 లీటర్లకు 3 మి.లీ.)",
+        "cost_note": "Bird perches; spray only above 4 larvae per metre row"
+      },
+      "waiting_days": 17,
+      "followup_en": "Are green caterpillars that walk by arching their body eating the leaves?",
+      "followup_te": "శరీరం వంచి నడిచే పచ్చని పురుగులు ఆకులు తింటున్నాయా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.33; symptoms: TNAU Agritech",
+      "i18n": {
+        "hi": {
+          "name": "सोयाबीन की हरी सेमीलूपर इल्ली",
+          "cause": "शरीर मोड़कर चलने वाली हरी इल्लियाँ पत्तियों और फूलों में छेद कर खाती हैं।",
+          "dose": "1 लीटर पानी में 0.3 मि.ली. (10 लीटर में 3 मि.ली.)",
+          "followup": "क्या शरीर मोड़कर चलने वाली हरी इल्लियाँ पत्ते खा रही हैं?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Insecticides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/MUP%20%28insecticide%29%20%2030.09.2026.pdf",
+          "page": 33,
+          "row": "Flubendiamide 39.35% SC, Soybean defoliators (Helicoverpa, Spodoptera, semilooper): per-litre dose 0.3 ml; waiting period 17 days"
+        },
+        {
+          "title": "TNAU Agritech: Insect pests of field crops and their management",
+          "url": "https://agritech.tnau.ac.in/pdf/6.pdf",
+          "page": null,
+          "row": "Symptoms"
+        }
+      ],
+      "pest_terms": [
+        "semi",
+        "looper"
+      ]
+    },
+    {
+      "id": "mustard_aphid",
+      "crops": [
+        "mustard"
+      ],
+      "verified": false,
+      "name_en": "Mustard aphid",
+      "name_te": "ఆవాల పేనుబంక",
+      "symptoms": [
+        {
+          "k": [
+            "పేనుబంక",
+            "పేను బంక",
+            "माहू",
+            "चेपा",
+            "मोयला",
+            "aphid"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "గుంపులు",
+            "పూత కొమ్మలు కప్ప",
+            "झुंड",
+            "टहनियाँ ढकी",
+            "colonies",
+            "covered with insects"
+          ],
+          "w": 2
+        }
+      ],
+      "cause_en": "Dense colonies of small grey-green insects cover flower shoots and pods; cloudy cold weather favours them.",
+      "cause_te": "చిన్న బూడిద-పచ్చని పురుగుల దట్టమైన గుంపులు పూత కొమ్మలు, కాయలను కప్పేస్తాయి; మబ్బు, చలి వాతావరణంలో ఎక్కువ.",
+      "treatment": {
+        "product": "Thiamethoxam 25% WG",
+        "dose_per_litre": "0.1 g",
+        "dose_te": "ఒక లీటరు నీటికి 0.1 గ్రాములు (10 లీటర్లకు 1 గ్రాములు)",
+        "cost_note": "Sow early (October); spray only above threshold"
+      },
+      "waiting_days": 21,
+      "followup_en": "Are the flower shoots covered with masses of small grey-green insects?",
+      "followup_te": "పూత కొమ్మలపై చిన్న బూడిద-పచ్చని పురుగులు గుంపులుగా కప్పి ఉన్నాయా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.52; symptoms: TNAU Agritech",
+      "i18n": {
+        "hi": {
+          "name": "सरसों का माहू (चेपा)",
+          "cause": "छोटे स्लेटी-हरे कीटों के घने झुंड फूलों की टहनियों और फलियों को ढक लेते हैं; बादल और ठंड में ज़्यादा।",
+          "dose": "1 लीटर पानी में 0.1 ग्राम (10 लीटर में 1 ग्राम)",
+          "followup": "क्या फूलों की टहनियाँ छोटे स्लेटी-हरे कीटों से ढकी हैं?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Insecticides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/MUP%20%28insecticide%29%20%2030.09.2026.pdf",
+          "page": 52,
+          "row": "Thiamethoxam 25% WG, Mustard aphid: 50-100 g/ha in 500-1000 L (0.05-0.2 g/L); waiting period 21 days"
+        },
+        {
+          "title": "TNAU Agritech: Insect pests of field crops and their management",
+          "url": "https://agritech.tnau.ac.in/pdf/6.pdf",
+          "page": null,
+          "row": "Symptoms"
+        }
+      ],
+      "pest_terms": [
+        "aphid"
+      ]
+    },
+    {
+      "id": "cotton_thrips",
+      "crops": [
+        "cotton"
+      ],
+      "verified": false,
+      "name_en": "Cotton thrips",
+      "name_te": "పత్తి తామర పురుగు",
+      "symptoms": [
+        {
+          "k": [
+            "తామర పురుగు",
+            "తామర",
+            "థ్రిప్స్",
+            "थ्रिप्स",
+            "चुरड़ा",
+            "thrips"
+          ],
+          "w": 5
+        },
+        {
+          "k": [
+            "వెండి రంగు",
+            "పైకి ముడత",
+            "चाँदी जैसी",
+            "ऊपर मुड़",
+            "silvery leaves",
+            "silvery underside",
+            "curling upwards"
+          ],
+          "w": 3
+        }
+      ],
+      "cause_en": "Tiny insects scrape the leaf underside; leaves become silvery, wrinkled and curl upward on young plants.",
+      "cause_te": "చిన్న పురుగులు ఆకు అడుగున గీకుతాయి; లేత మొక్కల ఆకులు వెండి రంగులో ముడతలు పడి పైకి ముడుచుకుంటాయి.",
+      "treatment": {
+        "product": "Fipronil 5% SC",
+        "dose_per_litre": "3 ml",
+        "dose_te": "ఒక లీటరు నీటికి 3 మి.లీ. (10 లీటర్లకు 30 మి.లీ.)",
+        "cost_note": "Seed treatment protects the first 30-40 days"
+      },
+      "waiting_days": 6,
+      "followup_en": "Is the underside of young leaves silvery and the leaves wrinkled and curling up?",
+      "followup_te": "లేత ఆకుల అడుగు భాగం వెండి రంగులో ఉండి, ఆకులు ముడతలు పడి పైకి ముడుచుకుంటున్నాయా?",
+      "source": "CIB&RC Major Uses of Pesticides, p.30; symptoms: TNAU Agritech",
+      "i18n": {
+        "hi": {
+          "name": "कपास का थ्रिप्स",
+          "cause": "छोटे कीट पत्ती के नीचे खुरचते हैं; छोटे पौधों की पत्तियाँ चाँदी जैसी, सिकुड़ी और ऊपर मुड़ जाती हैं।",
+          "dose": "1 लीटर पानी में 3 मि.ली. (10 लीटर में 30 मि.ली.)",
+          "followup": "क्या नई पत्तियों का निचला भाग चाँदी जैसा है और पत्तियाँ सिकुड़कर ऊपर मुड़ रही हैं?"
+        }
+      },
+      "sources": [
+        {
+          "title": "CIB&RC Major Uses of Pesticides: Insecticides (as on 30.09.2026)",
+          "url": "https://ppqs.gov.in/sites/default/files/MUP%20%28insecticide%29%20%2030.09.2026.pdf",
+          "page": 30,
+          "row": "Fipronil 05% SC, Cotton aphid, jassid, thrips, whitefly: 1500-2000 ml/ha in 500 L (3-4 ml/L); waiting period 6 days"
+        },
+        {
+          "title": "TNAU Agritech: Pests of cotton",
+          "url": "https://agritech.tnau.ac.in/crop_protection/crop_prot_crop_insectpest%20_cotton.html",
+          "page": null,
+          "row": "Symptoms"
+        }
+      ],
+      "pest_terms": [
+        "thrips"
+      ]
+    }
+  ],
+  "crop_names": {
+    "rice": {
+      "te": "వరి",
+      "hi": "धान",
+      "en": "Rice"
+    },
+    "cotton": {
+      "te": "పత్తి",
+      "hi": "कपास",
+      "en": "Cotton"
+    },
+    "chilli": {
+      "te": "మిరప",
+      "hi": "मिर्च",
+      "en": "Chilli"
+    },
+    "groundnut": {
+      "te": "వేరుశనగ",
+      "hi": "मूंगफली",
+      "en": "Groundnut"
+    },
+    "tomato": {
+      "te": "టమాట",
+      "hi": "टमाटर",
+      "en": "Tomato"
+    },
+    "maize": {
+      "te": "మొక్కజొన్న",
+      "hi": "मक्का",
+      "en": "Maize"
+    },
+    "pulses": {
+      "te": "కంది",
+      "hi": "दलहन",
+      "en": "Pulses"
+    },
+    "vegetable": {
+      "te": "కూరగాయ",
+      "hi": "सब्जी",
+      "en": "Vegetable"
+    },
+    "wheat": {
+      "te": "గోధుమ",
+      "hi": "गेहूं",
+      "en": "Wheat"
+    },
+    "sugarcane": {
+      "te": "చెరకు",
+      "hi": "गन्ना",
+      "en": "Sugarcane"
+    },
+    "onion": {
+      "te": "ఉల్లి",
+      "hi": "प्याज",
+      "en": "Onion"
+    },
+    "potato": {
+      "te": "బంగాళాదుంప",
+      "hi": "आलू",
+      "en": "Potato"
+    },
+    "mango": {
+      "te": "మామిడి",
+      "hi": "आम",
+      "en": "Mango"
+    },
+    "soybean": {
+      "te": "సోయాబీన్",
+      "hi": "सोयाबीन",
+      "en": "Soybean"
+    },
+    "mustard": {
+      "te": "ఆవాలు",
+      "hi": "सरसों",
+      "en": "Mustard"
+    },
+    "cabbage": {
+      "te": "క్యాబేజీ",
+      "hi": "पत्तागोभी",
+      "en": "Cabbage"
+    }
+  }
+}

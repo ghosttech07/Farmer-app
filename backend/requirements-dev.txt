@@ -1,0 +1,4 @@
+# Only for rebuilding pesticides.db from the official CIB&RC PDFs (python tools/build_pesticide_db.py).
+# The running app does not need these.
+-r requirements.txt
+pymupdf>=1.24

@@ -1,0 +1,29 @@
+# Secrets and pilot data: never commit
+.env
+backend/.env
+backend/pilot_log.jsonl
+*.jsonl
+
+# Dependencies and builds
+node_modules/
+frontend/dist/
+backend/.venv/
+__pycache__/
+.pytest_cache/
+
+# Logs and tool output
+*.log
+.taste-skill/
+.hallmark/before/
+.hallmark/salt
+
+# The downloaded Apper copy is a backup, not part of the app
+apper-app/
+
+# Official PDFs downloaded by tools/build_pesticide_db.py (the built pesticides.db is kept)
+backend/.cibrc_pdfs/
+
+# Design-tool working files (not part of the app)
+.hallmark/
+.taste-skill/
+.claude/

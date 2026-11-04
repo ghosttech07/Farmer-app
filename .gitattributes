@@ -1,0 +1,4 @@
+# Text files use LF in the repository (the Linux build host reads them); binaries are left untouched.
+* text=auto eol=lf
+*.db binary
+*.png binary
