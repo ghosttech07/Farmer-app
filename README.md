@@ -26,6 +26,8 @@
 
 </div>
 
+> 📄 **Hackathon submission document (PDF):** [docs/submission/Pantha-Sahayam-Hackathon-Submission.pdf](docs/submission/Pantha-Sahayam-Hackathon-Submission.pdf): problem, solution, Gnani models, stack, data, demo-video and presentation scripts.
+
 ---
 
 ## 📖 Contents
@@ -328,6 +330,7 @@ Farmer-app/
 │   ├── src/styles.css · tokens.css · base.css
 │   └── index.html
 ├── docs/screenshots/          # images used in this README
+├── docs/submission/           # hackathon document (PDF + its HTML source)
 ├── Dockerfile                 # one image: React build + Python server
 ├── render.yaml                # one-click Render deploy (Vercel needs no config file)
 └── README.md

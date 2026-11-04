@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pantha Sahayam: Hackathon Submission</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&family=Hind+Guntur:wght@400;500;600&family=Red+Hat+Display:wght@500;700;800&family=Red+Hat+Mono:wght@400;500&family=Red+Hat+Text:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4; margin: 16mm 15mm 18mm; }
+  :root {
+    --ink: #1a1a1a; --ink-2: #4a4640; --muted: #625c53; --paper: #fbf9f4; --paper-2: #f3efe6;
+    --accent: #ff6b35; --accent-text: #b23c0c; --accent-soft: #ffe2d4; --leaf: #2e7d32; --leaf-soft: #e3f1e4; --rule: #d9d3c6;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; font-family: "Red Hat Text", "Hind Guntur", "Hind", "Nirmala UI", sans-serif; color: var(--ink);
+         font-size: 10.4pt; line-height: 1.55; background: #fff; }
+  h1, h2, h3 { font-family: "Red Hat Display", "Hind Guntur", "Hind", "Nirmala UI", sans-serif; line-height: 1.2; margin: 0; }
+  h2 { font-size: 19pt; font-weight: 800; margin: 0 0 3mm; letter-spacing: -0.01em; }
+  h2 .n { color: var(--accent-text); margin-right: 2.5mm; }
+  h3 { font-size: 12pt; font-weight: 700; margin: 5mm 0 1.5mm; }
+  p { margin: 0 0 2.6mm; }
+  ul, ol { margin: 0 0 3mm; padding-left: 5mm; }
+  li { margin-bottom: 1.2mm; }
+  strong { font-weight: 700; }
+  .lead { font-size: 11.5pt; color: var(--ink-2); }
+  .mono { font-family: "Red Hat Mono", monospace; font-size: 9pt; }
+  section { break-before: page; }
+  .avoid { break-inside: avoid; }
+  .kicker { text-transform: uppercase; letter-spacing: .14em; font-size: 8pt; font-weight: 700; color: var(--accent-text); margin-bottom: 2mm; }
+
+  /* cover */
+  .cover { height: 263mm; display: grid; grid-template-rows: auto 1fr auto; background: var(--paper); border-radius: 6mm;
+           padding: 13mm 13mm 11mm; position: relative; overflow: hidden; }
+  .cover .tag { display: inline-block; background: var(--ink); color: #fff; padding: 1.4mm 3.4mm; border-radius: 10mm; font-size: 8.5pt;
+                font-weight: 700; letter-spacing: .06em; }
+  .cover h1 { font-size: 40pt; font-weight: 800; letter-spacing: -0.02em; margin-top: 8mm; }
+  .cover .scripts { font-family: "Hind Guntur", "Hind", "Nirmala UI", sans-serif; font-size: 17pt; color: var(--ink-2); margin-top: 1mm; }
+  .cover .pitch { font-size: 14pt; line-height: 1.45; margin-top: 6mm; max-width: 118mm; }
+  .cover .pitch b { color: var(--accent-text); }
+  .phones { display: flex; gap: 4mm; align-items: flex-end; justify-content: center; margin-top: 6mm; }
+  .phones img { width: 44mm; border-radius: 5mm; border: 1.6mm solid var(--ink); box-shadow: 0 3mm 7mm rgba(0,0,0,.18); background: #fff; }
+  .phones img.mid { width: 50mm; }
+  .cover .foot { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm; border-top: .3mm solid var(--ink); padding-top: 4mm; }
+  .stat b { display: block; font-family: "Red Hat Display", sans-serif; font-size: 18pt; font-weight: 800; }
+  .stat span { font-size: 8.3pt; color: var(--ink-2); }
+
+  /* blocks */
+  .card { background: var(--paper); border: .3mm solid var(--rule); border-radius: 3mm; padding: 4mm 5mm; margin-bottom: 4mm; }
+  .card.accent { background: var(--accent-soft); border-color: #f6c3aa; }
+  .card.leaf { background: var(--leaf-soft); border-color: #b9dcbb; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3.5mm; }
+  .quote { font-family: "Red Hat Display", sans-serif; font-size: 15pt; font-weight: 700; line-height: 1.3; border-left: 1.4mm solid var(--accent);
+           padding: 1mm 0 1mm 5mm; margin: 4mm 0 5mm; }
+  table { width: 100%; border-collapse: collapse; margin: 1mm 0 4mm; font-size: 9.4pt; }
+  th, td { text-align: left; vertical-align: top; padding: 2.1mm 2.6mm; border-bottom: .25mm solid var(--rule); }
+  th { background: var(--ink); color: #fff; font-weight: 700; font-size: 8.6pt; letter-spacing: .03em; }
+  tr:nth-child(even) td { background: #fcfbf8; }
+  td:first-child { font-weight: 700; white-space: nowrap; }
+  .pill { display: inline-block; background: var(--ink); color: #fff; border-radius: 10mm; padding: .5mm 2.4mm; font-size: 8pt; font-weight: 700; }
+  .pill.o { background: var(--accent); color: var(--ink); }
+  .pill.g { background: var(--leaf); }
+
+  /* flow */
+  .flow { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2.4mm; margin: 3mm 0 4mm; }
+  .step { background: var(--paper); border: .3mm solid var(--rule); border-radius: 3mm; padding: 3mm; position: relative; }
+  .step b { display: block; font-family: "Red Hat Display", sans-serif; font-size: 10pt; margin-bottom: 1mm; }
+  .step .num { display: inline-grid; place-items: center; width: 6mm; height: 6mm; border-radius: 50%; background: var(--accent); color: var(--ink);
+               font-weight: 800; font-size: 8.5pt; margin-bottom: 1.5mm; }
+  .step small { font-size: 8.3pt; color: var(--ink-2); line-height: 1.4; display: block; }
+  .branches { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3mm; }
+  .branch { border-radius: 3mm; padding: 3mm 3.5mm; font-size: 9pt; }
+  .branch b { display: block; margin-bottom: .8mm; }
+
+  /* screenshots */
+  .shots { display: flex; gap: 3.5mm; justify-content: space-between; }
+  .shots figure { margin: 0; flex: 1; text-align: center; }
+  .shots img { width: 100%; border-radius: 3mm; border: .9mm solid var(--ink); }
+  figcaption { font-size: 8pt; color: var(--ink-2); margin-top: 1.5mm; line-height: 1.35; }
+  .desk img { width: 100%; border: .4mm solid var(--rule); border-radius: 2.5mm; }
+
+  /* script */
+  .script td:first-child { font-family: "Red Hat Mono", monospace; font-weight: 500; color: var(--accent-text); width: 17mm; }
+  .script td:nth-child(2) { width: 58mm; color: var(--ink-2); font-size: 8.8pt; }
+  .say { font-style: italic; }
+  .fill { color: var(--muted); border-bottom: .3mm dashed var(--muted); padding: 0 12mm; }
+  .te { font-family: "Hind Guntur", "Nirmala UI", sans-serif; }
+  .hi { font-family: "Hind", "Nirmala UI", sans-serif; }
+  .post { white-space: pre-wrap; font-size: 9.6pt; line-height: 1.5; }
+  .small { font-size: 8.6pt; color: var(--ink-2); }
+</style>
+</head>
+<body>
+
+<!-- ============ COVER ============ -->
+<div class="cover">
+  <div>
+    <span class="tag">GNANI AI · GREAT INDIAN AI INTERNSHIP CHALLENGE</span>
+    <h1>🌾 Pantha Sahayam</h1>
+    <div class="scripts"><span class="te">పంట సహాయం</span> · <span class="hi">फसल सहायता</span> · Crop Help</div>
+    <p class="pitch">A farmer <b>speaks</b> the crop problem in Telugu, Hindi or English, and <b>hears</b> back the right registered spray, the right dose and the safe waiting period, powered by <b>Gnani Prisma</b> and <b>Gnani Timbre</b>.</p>
+  </div>
+  <div class="phones">
+    <img src="../screenshots/mobile-home-telugu.png" alt="Home">
+    <img class="mid" src="../screenshots/mobile-answer-telugu-screen.png" alt="Answer">
+    <img src="../screenshots/mobile-choose-crop-telugu-screen.png" alt="Choose crop">
+  </div>
+  <div class="foot">
+    <div class="stat"><b>3</b><span>languages, voice in &amp; voice out</span></div>
+    <div class="stat"><b>41</b><span>checked problems on 16 crops</span></div>
+    <div class="stat"><b>2,243</b><span>official CIB&amp;RC registered uses</span></div>
+    <div class="stat"><b>0</b><span>doses written by AI (every one is official)</span></div>
+  </div>
+</div>
+
+<!-- ============ 1. PROBLEM ============ -->
+<section>
+  <div class="kicker">Project submission</div>
+  <h2><span class="n">01</span>The problem</h2>
+  <p class="lead">When a pest or disease appears in the field, a small farmer must decide <strong>what to spray, how much, and when it is safe to harvest</strong>, often within days and often alone.</p>
+
+  <div class="quote">Most small farmers decide what to spray by asking the pesticide shop, the same place that sells the spray.</div>
+
+  <div class="grid2">
+    <div class="card">
+      <h3 style="margin-top:0">What goes wrong today</h3>
+      <ul>
+        <li><strong>Wrong product.</strong> A spray that isn't registered for that crop or pest wastes money and doesn't work.</li>
+        <li><strong>Wrong dose.</strong> Overdosing harms the farmer's health and the soil. Underdosing breeds resistant pests.</li>
+        <li><strong>Spraying too close to harvest.</strong> Chemical residues reach the food on our plates.</li>
+        <li><strong>Help is far away.</strong> Agriculture officers are few, and calling a helpline means explaining in a language and vocabulary that may not be the farmer's own.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">Why existing apps don't reach them</h3>
+      <ul>
+        <li><strong>Text-heavy and English-first,</strong> while many farmers are more comfortable speaking than typing, in Telugu or Hindi.</li>
+        <li><strong>Sign-ups, OTPs and installs,</strong> which are real barriers on a basic phone with limited data.</li>
+        <li><strong>Generic AI chatbots</strong> can sound confident and still <em>invent</em> a pesticide dose. On a farm, a made-up number is dangerous.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card accent avoid">
+    <h3 style="margin-top:0">Who we are building for</h3>
+    <p style="margin:0">Small and marginal farmers, who hold the large majority of India's farm holdings (about 86% according to the Agriculture Census 2015-16). We start with farmers in <strong>Andhra Pradesh and Telangana (Telugu)</strong> and the <strong>Hindi-speaking states</strong>, with English for extension workers and students. The phone is already in their pocket; what's missing is help that <strong>listens and speaks their language</strong> and can be <strong>trusted</strong>.</p>
+  </div>
+
+  <h3>Problem statement</h3>
+  <p><em>How might a small farmer, using only their voice and their own language, get pesticide advice that is correct, officially registered and safe, in under a minute, without an app install or an account?</em></p>
+</section>
+
+<!-- ============ 2. SOLUTION ============ -->
+<section>
+  <h2><span class="n">02</span>Our solution</h2>
+  <p class="lead"><strong>Pantha Sahayam</strong> ("crop help") is a voice-first web app. The farmer opens a link, taps one big microphone button and describes the problem in their own words. Gnani's speech models understand them and speak the answer back.</p>
+
+  <div class="grid3">
+    <div class="card"><span class="pill o">VOICE FIRST</span><h3>Speak, don't type</h3><p class="small" style="margin:0">One big mic button. Up to 30 s of natural speech in Telugu, Hindi or English. Typing is optional.</p></div>
+    <div class="card"><span class="pill g">TRUSTED</span><h3>Official doses only</h3><p class="small" style="margin:0">Every product, dose and waiting period comes from the Government of India's CIB&amp;RC registration list, and is checked automatically.</p></div>
+    <div class="card"><span class="pill">NO BARRIERS</span><h3>No login, no install</h3><p class="small" style="margin:0">It works in any phone browser through a link. No account, no OTP, no app store.</p></div>
+  </div>
+
+  <h3>What the farmer gets</h3>
+  <table class="avoid">
+    <tr><th>Feature</th><th>What it means for the farmer</th></tr>
+    <tr><td>Answer in text + voice</td><td>The problem's name and cause, the product, the <strong>dose per litre</strong>, how to mix 10 litres and the <strong>days to wait before harvest</strong>, spoken aloud by Gnani Timbre.</td></tr>
+    <tr><td>Change language anytime</td><td>A small language key at the top re-reads the same answer, text and voice, in Telugu, Hindi or English. Useful when a son or daughter, an officer or a shopkeeper is helping.</td></tr>
+    <tr><td>"You said…" check</td><td>Before answering, the app shows what it heard. The farmer can fix it, so a mis-heard word never becomes a wrong spray.</td></tr>
+    <tr><td>No dead ends</td><td>A broad question like <em>"there are caterpillars on my plant"</em> leads to <strong>"which crop?"</strong>, then that crop's caterpillar problems as buttons, then the answer.</td></tr>
+    <tr><td>Waiting period by crop</td><td>The same spray can need 3 days on tomato but 29 days on pigeon pea. The app uses the farmer's crop, and the longest period when the crop is unknown.</td></tr>
+    <tr><td>Other registered sprays</td><td>Alternatives registered for that crop and pest, each linked to its page in the official government PDF.</td></tr>
+    <tr><td>Safety net</td><td>"Draft advice: confirm with an officer" until an expert verifies each entry, plus a one-tap call to the free <strong>Kisan Call Centre 1800-180-1551</strong>.</td></tr>
+  </table>
+
+  <div class="card leaf avoid">
+    <h3 style="margin-top:0">Our key design decision: AI listens and speaks, but never invents advice</h3>
+    <p style="margin:0">We use Gnani's models for what they do best, <strong>understanding and producing Indian-language speech</strong>. The <em>advice itself</em> comes from a checked knowledge base tied row by row to the government registry. A wrong pesticide dose can hurt a family, so we chose safety over a free-form chatbot.</p>
+  </div>
+</section>
+
+<!-- ============ 3. HOW IT WORKS ============ -->
+<section>
+  <h2><span class="n">03</span>How it works</h2>
+  <div class="flow">
+    <div class="step"><span class="num">1</span><b>Speak</b><small>The farmer taps the mic and describes the problem. The browser records and converts it to 16 kHz WAV.</small></div>
+    <div class="step"><span class="num">2</span><b>Gnani Prisma</b><small>Speech → text in Telugu, Hindi or English.</small></div>
+    <div class="step"><span class="num">3</span><b>Confirm</b><small>"You said…": the farmer confirms, edits or re-records.</small></div>
+    <div class="step"><span class="num">4</span><b>Understand</b><small>A symptom matcher scores 41 checked problems from the symptom words, crop and kind of problem.</small></div>
+    <div class="step"><span class="num">5</span><b>Gnani Timbre</b><small>The answer is spoken back, and the text stays on screen.</small></div>
+  </div>
+  <div class="branches avoid">
+    <div class="branch" style="background:var(--leaf-soft)"><b>✅ One clear problem</b>Full answer: product, dose, waiting days, other registered sprays.</div>
+    <div class="branch" style="background:var(--paper-2)"><b>❓ Partly sure</b>One yes/no question, e.g. "Are there eye-shaped spots with grey centres?"</div>
+    <div class="branch" style="background:var(--accent-soft)"><b>🌾 Broad question</b>"Which crop?" → that crop's problems as buttons → answer. If none fits, the officer.</div>
+  </div>
+
+  <h3>Inside the "understanding" step</h3>
+  <ul>
+    <li><strong>Symptom words in three languages</strong>, as farmers actually say them (e.g. <span class="te">గులాబీ రంగు పురుగు</span>, <span class="hi">गुलाबी सुंडी</span>, "pink bollworm").</li>
+    <li><strong>Crop awareness:</strong> evidence for the right crop raises the score, and a crop mismatch lowers it.</li>
+    <li><strong>Tolerant of speech slips:</strong> fuzzy matching handles what real speech-to-text returns, like "bowl worm" for bollworm, which we saw from Prisma during testing.</li>
+    <li><strong>Explainable:</strong> transparent rules and weights rather than a black box, so an officer can see why a problem was chosen.</li>
+  </ul>
+
+  <h3>Architecture (one deployable service)</h3>
+  <table class="avoid">
+    <tr><th>Layer</th><th>What runs there</th></tr>
+    <tr><td>Phone browser</td><td>React app: screens, mic recording and live level meter, 16 kHz WAV conversion, audio playback, language switch</td></tr>
+    <tr><td>API server</td><td>Flask + Waitress: <span class="mono">/api/advise</span>, <span class="mono">/api/answer</span> (language switch), <span class="mono">/api/feedback</span>, <span class="mono">/api/health</span>. The same server serves the React app.</td></tr>
+    <tr><td>Intelligence</td><td>Symptom matcher · guided crop and problem choices · answer templates in 3 languages · dose guard · registry lookups</td></tr>
+    <tr><td>Data</td><td><span class="mono">knowledge_base.json</span> (41 problems × 3 languages) · <span class="mono">pesticides.db</span> (2,243 CIB&amp;RC uses, SQLite)</td></tr>
+    <tr><td>Gnani AI</td><td>Prisma (speech → text) and Timbre (text → voice), called only from the server, so the API key never reaches the phone</td></tr>
+    <tr><td>Hosting</td><td>One Docker image (React build + Python server). Deploys on Vercel or Render as a single https link.</td></tr>
+  </table>
+</section>
+
+<!-- ============ 4. GNANI MODELS ============ -->
+<section>
+  <h2><span class="n">04</span>Gnani models used</h2>
+  <table class="avoid">
+    <tr><th>Model</th><th>Role in Pantha Sahayam</th><th>Integration</th></tr>
+    <tr><td>Gnani Prisma v2.5<br><span class="small">speech-to-text</span></td>
+        <td>Understands the farmer's spoken problem in <strong>Telugu (te-IN), Hindi (hi-IN) and English (en-IN)</strong>, the core input of the app.</td>
+        <td><span class="mono">POST api.vachana.ai/stt/v3</span>: multipart WAV + language code; clips up to 30 s. <span class="mono">prisma-v3.0</span> is one setting away.</td></tr>
+    <tr><td>Gnani Timbre v3.0<br><span class="small">text-to-speech, voice "Lakshmi"</span></td>
+        <td>Speaks <strong>every answer, follow-up question and choice prompt</strong> in the farmer's language, including when the language is switched.</td>
+        <td><span class="mono">POST /api/v1/tts/inference</span>, returning WAV (22,050 Hz). Timbre v2.5 voices (Lavanya, Nalini, Kaveri) can be chosen by setting.</td></tr>
+  </table>
+
+  <h3>Tested live, not just integrated</h3>
+  <ul>
+    <li>Round trips Timbre → Prisma reproduced Telugu, Hindi and English sentences word for word.</li>
+    <li>A full voice question in Telugu (<span class="te">పత్తి కాయల్లో గులాబీ రంగు పురుగు ఉంది</span>) was transcribed, matched and answered with Telugu voice. Switching the answer to Hindi and English produced new Gnani voice with identical doses.</li>
+    <li>Real Prisma mishearings in English ("pink ballworm", "bowlworm") were captured and the matcher was made tolerant to them.</li>
+    <li>The Gnani client handles all three documented error formats, retries once on temporary errors or rate limits, and is covered by tests that use recorded API shapes (no credits spent).</li>
+  </ul>
+
+  <h3>What about Evon (gnani-evon-v3.3-30B-A3B)?</h3>
+  <div class="card avoid">
+    <p>We evaluated Gnani's Evon language model. Our position is a deliberate design choice:</p>
+    <ul style="margin-bottom:1mm">
+      <li><strong>Advice stays deterministic.</strong> A language model can phrase advice beautifully and still change a number. For pesticide doses that risk is unacceptable, so Evon is <em>not</em> in the critical path.</li>
+      <li><strong>Ready as an optional layer.</strong> The code already supports an Evon deployment (OpenAI-compatible endpoint, <span class="mono">GNANI_LLM_URL</span>) to make answers more conversational. A <strong>number guard</strong> rejects any Evon output that adds, drops or changes a dose or waiting period, and falls back to the checked template.</li>
+      <li><strong>Hosting reality.</strong> Evon is a 30B-parameter model without a hosted API; it needs data-centre GPUs (A100/H100). We enable it when a hosted endpoint is available.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 5. TECH STACK ============ -->
+<section>
+  <h2><span class="n">05</span>Technology stack</h2>
+  <div class="grid2">
+    <div>
+      <h3 style="margin-top:0">Frontend</h3>
+      <table>
+        <tr><th>Tech</th><th>Use</th></tr>
+        <tr><td>React 18</td><td>Screens as one state machine, back-button support</td></tr>
+        <tr><td>Vite 5</td><td>Build (~57 kB JavaScript after gzip)</td></tr>
+        <tr><td>MediaRecorder + Web Audio</td><td>Recording, live mic meter, silence detection, 16 kHz WAV</td></tr>
+        <tr><td>Web Speech API</td><td>Fallback recognition and voice</td></tr>
+        <tr><td>CSS design tokens</td><td>No UI framework; 44 px+ touch targets, sunlight mode, phone / tablet / desktop layouts</td></tr>
+        <tr><td>Hind Guntur · Hind · Red Hat</td><td>Proper Telugu and Devanagari rendering</td></tr>
+      </table>
+    </div>
+    <div>
+      <h3 style="margin-top:0">Backend</h3>
+      <table>
+        <tr><th>Tech</th><th>Use</th></tr>
+        <tr><td>Python 3.12</td><td>API, matcher, data tools</td></tr>
+        <tr><td>Flask 3 + Waitress</td><td>API server, also serves the React build</td></tr>
+        <tr><td>SQLite</td><td>Official registry: 2,243 CIB&amp;RC uses, read-only</td></tr>
+        <tr><td>JSON knowledge base</td><td>41 problems × 3 languages</td></tr>
+        <tr><td>requests · dotenv · CORS</td><td>Gnani calls, settings, origin allow-list</td></tr>
+        <tr><td>PyMuPDF (tool)</td><td>Reads the official PDFs table by table into SQLite</td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="grid2">
+    <div>
+      <h3>Quality &amp; safety</h3>
+      <table>
+        <tr><th>Tool</th><th>Use</th></tr>
+        <tr><td>pytest</td><td>46 automated tests</td></tr>
+        <tr><td>audit_kb.py</td><td>Every dose vs. official rows; fails the build on drift</td></tr>
+        <tr><td>Rate limit</td><td>Per device, protects Gnani credits</td></tr>
+        <tr><td>Pilot log</td><td>Reference code on every answer, plus ratings</td></tr>
+      </table>
+    </div>
+    <div>
+      <h3>Deployment</h3>
+      <table>
+        <tr><th>Tool</th><th>Use</th></tr>
+        <tr><td>Docker</td><td>Multi-stage: Node builds UI → Python serves all</td></tr>
+        <tr><td>Vercel / Render</td><td>One https link; microphone works on phones</td></tr>
+        <tr><td>GitHub</td><td>github.com/ghosttech07/Farmer-app</td></tr>
+        <tr><td>Secrets</td><td>Gnani key only as a host environment variable</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. DATA & TRUST ============ -->
+<section>
+  <h2><span class="n">06</span>Where the answers come from</h2>
+  <p class="lead">Trust is the product. Every number a farmer hears can be traced to a government document.</p>
+  <table class="avoid">
+    <tr><th>Source</th><th>What we use it for</th></tr>
+    <tr><td>CIB&amp;RC, <em>Major Uses of Pesticides</em></td><td>Central Insecticide Board &amp; Registration Committee, Directorate of Plant Protection, Quarantine &amp; Storage, Govt. of India (ppqs.gov.in), <strong>as on 30.09.2026</strong>. Every product, dose and waiting period, plus the full registry (insecticides, fungicides, bio-insecticides, bio-fungicides).</td></tr>
+    <tr><td>TNAU Agritech Portal</td><td>Tamil Nadu Agricultural University: symptom descriptions of pests and diseases.</td></tr>
+    <tr><td>Kisan Call Centre</td><td>1800-180-1551, the free national helpline used as the safety net.</td></tr>
+  </table>
+
+  <h3>Five layers of protection</h3>
+  <ol>
+    <li><strong>One official row per treatment,</strong> cited with the PDF page in the data.</li>
+    <li><strong>Automatic audit.</strong> The product must be registered for that crop and pest, the dose must sit inside the official range, and the waiting period must not be shorter. During development this audit <strong>caught two real errors</strong>: a mancozeb formulation not registered for tomato early blight, and a neem product not registered against aphids. Both were corrected.</li>
+    <li><strong>Fixed answer templates</strong> in each language, filled only from the checked entry, with a number guard on any rephrasing.</li>
+    <li><strong>Confirm before answer</strong>, so a speech-to-text slip can be corrected by the farmer.</li>
+    <li><strong>Human sign-off.</strong> Entries are marked <em>draft</em> until an agriculture officer verifies them. A pilot switch (<span class="mono">BLOCK_UNVERIFIED</span>) can send unverified entries to the officer instead.</li>
+  </ol>
+
+  <h3>Coverage today</h3>
+  <p><strong>41 problems across 16 crops:</strong> rice, cotton, chilli, groundnut, tomato, maize, pulses, vegetables (brinjal, okra), wheat, sugarcane, onion, potato, mango, soybean, mustard and cabbage. They include pests (borers, armyworm, bollworms, leaf folder, aphids, whitefly, thrips, jassids, mites, hoppers, mealybug) and diseases (blast, sheath blight, blights, rusts, mildew, leaf spots, fruit rot). The knowledge base grows by adding entries; the audit checks each one against the registry automatically.</p>
+</section>
+
+<!-- ============ 7. SCREENSHOTS ============ -->
+<section>
+  <h2><span class="n">07</span>The app</h2>
+  <div class="shots avoid">
+    <figure><img src="../screenshots/mobile-home-telugu.png"><figcaption>Home: one big mic, Telugu first, English underneath</figcaption></figure>
+    <figure><img src="../screenshots/mobile-answer-telugu-screen.png"><figcaption>Answer: product, dose per litre, waiting days</figcaption></figure>
+    <figure><img src="../screenshots/mobile-choose-crop-telugu-screen.png"><figcaption>Broad question → "which crop?"</figcaption></figure>
+    <figure><img src="../screenshots/mobile-answer-hindi-screen.png"><figcaption>Same flow in Hindi (wheat rust)</figcaption></figure>
+  </div>
+  <div class="desk avoid" style="margin-top:6mm">
+    <img src="../screenshots/desktop-answer-english.png">
+    <figcaption>Desktop: maize fall armyworm, with other sprays registered by CIB&amp;RC, each linked to its official page</figcaption>
+  </div>
+</section>
+
+<!-- ============ 8. IMPACT ============ -->
+<section>
+  <h2><span class="n">08</span>Impact, novelty &amp; roadmap</h2>
+  <div class="grid2">
+    <div class="card">
+      <h3 style="margin-top:0">Impact</h3>
+      <ul style="margin:0">
+        <li><strong>Right spray, right dose:</strong> less money wasted on wrong or excess chemicals.</li>
+        <li><strong>Safer food:</strong> waiting periods spoken clearly, by crop.</li>
+        <li><strong>Health:</strong> less overexposure for farmers and families.</li>
+        <li><strong>Inclusion:</strong> works for farmers who prefer speaking over typing.</li>
+        <li><strong>Officers' time:</strong> common questions answered; the hard cases reach them.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">What makes it different</h3>
+      <ul style="margin:0">
+        <li>Voice in <em>and</em> voice out in Indian languages via Gnani.</li>
+        <li>Every dose traceable to a government row, and audited.</li>
+        <li>Language switch on any screen, mid-conversation.</li>
+        <li>Guided choices instead of "I don't know".</li>
+        <li>No login, no install: just a link.</li>
+      </ul>
+    </div>
+  </div>
+  <h3>Honest limits</h3>
+  <ul>
+    <li>Answers cover the 41 checked problems; outside them the app guides the farmer to the Kisan Call Centre rather than guess.</li>
+    <li>Entries await an agriculture officer's verification, and the Telugu and Hindi wording awaits native-speaker review.</li>
+    <li>Field testing with real farmers in noisy conditions is the next step to tune the matcher.</li>
+  </ul>
+  <h3>Roadmap</h3>
+  <table class="avoid">
+    <tr><th>Next</th><th>Plan</th></tr>
+    <tr><td>Pilot</td><td>10–15 farmers; the built-in pilot log and report measure answered rate, usefulness and what farmers did next</td></tr>
+    <tr><td>Coverage</td><td>Add the problems farmers actually ask about (from the pilot log); more Gnani-supported languages (Tamil, Kannada, Marathi…)</td></tr>
+    <tr><td>Expert loop</td><td>Officer review of entries; verified badge on answers</td></tr>
+    <tr><td>More help</td><td>Mandi crop prices (Agmarknet), weather-based spray timing, photo of the leaf as extra evidence</td></tr>
+    <tr><td>Evon</td><td>Conversational answers through a hosted Evon endpoint, kept behind the number guard</td></tr>
+  </table>
+</section>
+
+<!-- ============ 9. DEMO VIDEO SCRIPT ============ -->
+<section>
+  <h2><span class="n">09</span>Demo video script (60 seconds)</h2>
+  <p class="small">Record on a phone using the deployed link (screen recording with sound). Speak the voice-over in English; the farmer lines are in Telugu and Hindi, and the app's Gnani voice plays as it is.</p>
+  <table class="script">
+    <tr><th>Time</th><th>On screen</th><th>Voice-over / what is said</th></tr>
+    <tr><td>0:00–0:06</td><td>Close-up of the home screen in Telugu, mic glowing</td><td class="say">"When pests attack, a small farmer has to decide what to spray, how much, and when it's safe to harvest. Usually alone."</td></tr>
+    <tr><td>0:06–0:16</td><td>Tap mic; speak: <span class="te">పత్తి కాయల్లో గులాబీ రంగు పురుగు ఉంది</span></td><td class="say">"Pantha Sahayam lets them just speak, in Telugu, Hindi or English. Gnani Prisma turns the voice into text."</td></tr>
+    <tr><td>0:16–0:22</td><td>"You said…" screen → tap <em>Yes, that's right</em></td><td class="say">"The farmer checks what we heard, so a wrong word never becomes a wrong spray."</td></tr>
+    <tr><td>0:22–0:34</td><td>Answer card: Profenofos 50% EC · 2 ml per litre · 15 days. Gnani Timbre speaks it in Telugu (let 3–4 s play)</td><td class="say">"The answer comes back as text and voice: the product, the dose per litre and the days to wait before harvest, all from the Government of India's CIB&amp;RC registry."</td></tr>
+    <tr><td>0:34–0:42</td><td>Tap the language key → हिन्दी; the Hindi voice plays</td><td class="say">"Switch language anytime, and Gnani Timbre speaks it again."</td></tr>
+    <tr><td>0:42–0:53</td><td>New question: <span class="te">నా మొక్కకు గొంగళి పురుగులు ఉన్నాయి</span> → crop buttons → tap <span class="te">టమాట</span> → tap the problem → answer</td><td class="say">"Even a vague question gets help: which crop, which problem, then the checked answer."</td></tr>
+    <tr><td>0:53–1:00</td><td>Title card: logo, "Gnani Prisma + Timbre · 41 checked problems · every dose official"</td><td class="say">"Pantha Sahayam. Speak your problem. Hear the right answer. Built with Gnani AI."</td></tr>
+  </table>
+  <div class="card avoid">
+    <h3 style="margin-top:0">Recording tips</h3>
+    <ul style="margin:0">
+      <li>Open the deployed link once before recording, since a free host may take a few seconds to wake up.</li>
+      <li>Turn the phone volume up so Gnani's voice is audible in the screen recording.</li>
+      <li>Record in a quiet room, holding the phone 20–30 cm from your mouth.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 10. PITCH SCRIPT ============ -->
+<section>
+  <h2><span class="n">10</span>Presentation script (about 2 minutes)</h2>
+  <div class="card">
+    <p><strong>Opening (problem).</strong> "Imagine a cotton farmer in Telangana who finds pink worms inside her cotton bolls. She needs to know what to spray, how much and when it's safe to pick, and today she asks the shop that sells the spray. Wrong products, double doses and spraying too close to harvest cost farmers money and health, and put residues on our food."</p>
+    <p><strong>Why now.</strong> "She has a phone, but most farm apps are typed, English-first and need a login. She'd rather <em>talk</em>, in Telugu."</p>
+    <p><strong>Solution.</strong> "Pantha Sahayam is a voice-first web app. She opens a link, taps one button and speaks. Gnani Prisma understands her Telugu, Hindi or English. She confirms what we heard. Then she gets the product, the dose per litre and the days to wait before harvest, on screen and spoken by Gnani Timbre. She can switch the language anytime. A vague question like 'caterpillars on my plant' becomes: which crop, which problem, answer."</p>
+    <p><strong>Trust.</strong> "We made one hard choice: AI listens and speaks, but it never invents advice. Every dose comes from the Government of India's pesticide registration list, 2,243 official uses that we turned into a database, and an automatic audit checks every answer against it. It already caught two real mistakes before any farmer saw them. When we're not sure, we ask one question or connect her to the Kisan Call Centre."</p>
+    <p><strong>Tech.</strong> "React on the phone; Python and Flask on the server; Gnani Prisma and Timbre for speech; SQLite for the official registry; one Docker image on Vercel; 46 automated tests."</p>
+    <p style="margin:0"><strong>Close.</strong> "Next we pilot with farmers, add the problems they actually ask about, and get every entry verified by agriculture officers. Pantha Sahayam: speak your problem, hear the right answer."</p>
+  </div>
+</section>
+
+<!-- ============ 11. TEAM + POST ============ -->
+<section>
+  <h2><span class="n">11</span>Team &amp; links</h2>
+  <table>
+    <tr><th>Member</th><th>Contribution</th></tr>
+    <tr><td><span class="fill">Name</span></td><td><span class="fill">e.g. product idea, farmer research, Telugu content, testing</span></td></tr>
+    <tr><td><span class="fill">Name</span></td><td><span class="fill">e.g. backend, Gnani integration, data pipeline</span></td></tr>
+    <tr><td><span class="fill">Name</span></td><td><span class="fill">e.g. frontend, design, demo video</span></td></tr>
+  </table>
+  <table>
+    <tr><th>Link</th><th>Address</th></tr>
+    <tr><td>Live app</td><td><span class="fill">https://….vercel.app</span></td></tr>
+    <tr><td>Source code</td><td>https://github.com/ghosttech07/Farmer-app</td></tr>
+    <tr><td>Demo video</td><td><span class="fill">link</span></td></tr>
+  </table>
+
+  <h3>LinkedIn / X post</h3>
+  <div class="card post">🌾 We built Pantha Sahayam (పంట సహాయం) for the #GreatIndianAIInternshipChallenge by Gnani AI!
+
+A small farmer shouldn't have to type in English to find out what to spray. With Pantha Sahayam they just SPEAK their crop problem in Telugu, Hindi or English, and hear back the right registered pesticide, the dose per litre and the safe waiting period before harvest.
+
+🎙️ Gnani Prisma understands the farmer's voice
+🔊 Gnani Timbre speaks the answer back, and the language can be switched anytime
+📚 Every dose comes from the Government of India's CIB&amp;RC registry (2,243 official uses), checked automatically
+🧭 Vague question? It asks which crop, then guides to the answer
+🚫 No login, no install, just a link
+
+AI listens and speaks; it never invents a pesticide dose.
+
+Try it: [live link]
+Code: github.com/ghosttech07/Farmer-app
+
+#GnaniAI #GreatIndianAIInternshipChallenge #AgriTech #VoiceAI #IndianLanguages</div>
+</section>
+
+</body>
+</html>
