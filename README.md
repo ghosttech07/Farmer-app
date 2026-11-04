@@ -172,7 +172,7 @@ Every label is **bilingual**: the chosen language first, with English underneath
 | Tool | Role |
 |---|---|
 | **Docker** (multi-stage) | Stage 1: Node 20 builds the React app. Stage 2: Python 3.12 serves the app and the API. One image, one port. |
-| **Render Blueprint** (`render.yaml`) | One-click deploy with a health check on `/api/health` |
+| **Vercel Container runtime / Render Blueprint** | The same Dockerfile deploys on Vercel (zero config) or Render (`render.yaml`, health check on `/api/health`) |
 | **pytest** (45 tests) | Matcher, answers in all three languages, the Gnani request and response shapes, language switching, guided choices, safety switches, rate limits, and the registry audit |
 | **`audit_kb.py`** | Checks every treatment in the app against the official rows. It runs inside the test suite, so a wrong dose fails the build. |
 
@@ -253,19 +253,27 @@ No Gnani key yet? Set `GNANI_MOCK=1`: the app then uses typed text or the browse
 
 ## 🚀 Deploy
 
-The repository is ready for one-click hosting.
+The whole app (React screens + Python API) is **one Docker image**, so it deploys as **one service on one link**. You never host the frontend and backend separately.
 
-**Render (recommended)**
+**Vercel**
+1. [vercel.com](https://vercel.com) → **Add New → Project** → import this GitHub repository.
+2. Vercel finds the root `Dockerfile` and picks the **Container** preset (Container runtime, in beta on all plans). Leave the build settings as they are.
+3. Under **Environment Variables**, add:
+   - `GNANI_API_KEY` = your key (secret, never in the code);
+   - `GNANI_TTS_MODEL` = `timbre-v3.0`.
+4. **Deploy.** You get an `https://….vercel.app` link where the microphone works on phones.
+
+**Render**
 1. [render.com](https://render.com) → **New → Blueprint** → choose this repository. It reads [`render.yaml`](render.yaml).
-2. Paste your **`GNANI_API_KEY`** when asked. It is stored as a secret in Render, never in the code.
-3. Deploy. You get an `https://…onrender.com` link where the microphone works on phones.
+2. Paste your **`GNANI_API_KEY`** when asked.
+3. **Deploy.** You get an `https://….onrender.com` link.
 
 **Any Docker host** (Railway, Fly.io, a VPS):
 ```bash
 docker build -t pantha-sahayam .
-docker run -p 8000:8000 -e GNANI_API_KEY=your-key -e GNANI_TTS_MODEL=timbre-v3.0 -v pantha-data:/data pantha-sahayam
+docker run -p 8000:80 -e GNANI_API_KEY=your-key -e GNANI_TTS_MODEL=timbre-v3.0 -v pantha-data:/data pantha-sahayam
 ```
-The volume on `/data` keeps the pilot log across restarts.
+The image listens on port 80, or on `$PORT` if the host sets one. The volume on `/data` keeps the pilot log across restarts. On hosts without a persistent disk, the pilot log is temporary, and the app keeps answering even if it can't write the log.
 
 ## 🔧 Configuration
 
@@ -321,7 +329,7 @@ Farmer-app/
 │   └── index.html
 ├── docs/screenshots/          # images used in this README
 ├── Dockerfile                 # one image: React build + Python server
-├── render.yaml                # one-click Render deploy
+├── render.yaml                # one-click Render deploy (Vercel needs no config file)
 └── README.md
 ```
 

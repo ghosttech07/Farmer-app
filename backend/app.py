@@ -51,9 +51,12 @@ _hits_lock = threading.Lock()
 
 def _log(record: dict):
     record["ts"] = time.strftime("%Y-%m-%dT%H:%M:%S")
-    LOG.parent.mkdir(parents=True, exist_ok=True)
-    with _log_lock, open(LOG, "a", encoding="utf-8") as f:
-        f.write(json.dumps(record, ensure_ascii=False) + "\n")
+    try:
+        LOG.parent.mkdir(parents=True, exist_ok=True)
+        with _log_lock, open(LOG, "a", encoding="utf-8") as f:
+            f.write(json.dumps(record, ensure_ascii=False) + "\n")
+    except OSError as e:  # a read-only or full disk on a host must never stop a farmer's answer
+        app.logger.warning("pilot log not written (%s): %s", LOG, e)
 
 
 def _client_ip() -> str:

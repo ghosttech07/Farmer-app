@@ -303,3 +303,12 @@ def test_choices_switch_language(monkeypatch, tmp_path):
     server, c = _client(monkeypatch, tmp_path)
     r = c.post("/api/answer", json={"kind": "choose", "context": "tomato caterpillar", "crop": "tomato", "lang": "hi"}).get_json()
     assert r["status"] == "choose" and r["lang"] == "hi" and "टमाटर" in r["answer"]
+
+
+def test_a_read_only_log_never_stops_an_answer(monkeypatch, tmp_path):
+    server, c = _client(monkeypatch, tmp_path)
+    blocked = tmp_path / "file-not-dir"
+    blocked.write_text("x")
+    monkeypatch.setattr(server, "LOG", blocked / "log.jsonl")  # parent is a file: every write fails
+    r = c.post("/api/advise", data={"text": "పత్తి కాయల్లో గులాబీ రంగు పురుగు ఉంది", "lang": "te"})
+    assert r.status_code == 200 and r.get_json()["status"] == "strong"
