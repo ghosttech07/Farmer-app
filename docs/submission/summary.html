@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pantha Sahayam: Project Summary</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600&family=Hind+Guntur:wght@400;600&family=Red+Hat+Display:wght@700;800&family=Red+Hat+Mono:wght@400&family=Red+Hat+Text:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4; margin: 11mm 14mm; }
+  :root { --ink: #1a1a1a; --ink-2: #4a4640; --paper: #fbf9f4; --rule: #d9d3c6; --accent: #ff6b35; --accent-text: #b23c0c;
+          --accent-soft: #ffe2d4; --leaf-soft: #e3f1e4; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; font-family: "Red Hat Text", "Hind Guntur", "Hind", "Nirmala UI", sans-serif; color: var(--ink);
+         font-size: 9.8pt; line-height: 1.45; }
+  h1, h2 { font-family: "Red Hat Display", "Hind Guntur", "Hind", "Nirmala UI", sans-serif; margin: 0; line-height: 1.2; }
+  .head { background: var(--paper); border-radius: 4mm; padding: 5mm 7mm 4.5mm; margin-bottom: 3mm; }
+  .tag { display: inline-block; background: var(--ink); color: #fff; padding: 1.2mm 3mm; border-radius: 10mm; font-size: 8pt;
+         font-weight: 700; letter-spacing: .06em; }
+  h1 { font-size: 23pt; font-weight: 800; letter-spacing: -0.02em; margin-top: 2.5mm; }
+  .scripts { font-family: "Hind Guntur", "Hind", "Nirmala UI", sans-serif; font-size: 13pt; color: var(--ink-2); margin-top: .5mm; }
+  .sub { margin: 2.5mm 0 0; font-size: 11pt; }
+  .block { display: grid; grid-template-columns: 9mm 1fr; gap: 3mm; padding: 3mm 0; border-top: .3mm solid var(--rule); break-inside: avoid; }
+  .num { font-family: "Red Hat Display", sans-serif; font-weight: 800; font-size: 15pt; color: var(--accent-text); line-height: 1.1; }
+  h2 { font-size: 12.5pt; font-weight: 800; margin-bottom: 1.2mm; }
+  p { margin: 0 0 1.5mm; }
+  ul { margin: 0; padding-left: 5mm; }
+  li { margin-bottom: .8mm; }
+  .card { border-radius: 3mm; padding: 3mm 4mm; margin-top: 2mm; }
+  .accent { background: var(--accent-soft); }
+  .leaf { background: var(--leaf-soft); }
+  .model { display: grid; grid-template-columns: 50mm 1fr; gap: 3mm; padding: 1.6mm 0; border-bottom: .25mm dashed var(--rule); }
+  .model:last-child { border-bottom: 0; }
+  .model b { display: block; }
+  .model small { color: var(--ink-2); font-size: 8.6pt; }
+  .mono { font-family: "Red Hat Mono", monospace; font-size: 8.8pt; }
+  .foot { margin-top: 3mm; font-size: 8.6pt; color: var(--ink-2); border-top: .3mm solid var(--ink); padding-top: 2.5mm;
+          display: flex; justify-content: space-between; }
+</style>
+</head>
+<body>
+  <div class="head">
+    <span class="tag">GNANI AI · GREAT INDIAN AI INTERNSHIP CHALLENGE</span>
+    <h1>🌾 Pantha Sahayam</h1>
+    <div class="scripts">పంట సహాయం · फसल सहायता · Crop Help</div>
+    <p class="sub">Voice-first crop advice for farmers in <strong>Telugu, Hindi and English</strong>.</p>
+  </div>
+
+  <div class="block">
+    <div class="num">01</div>
+    <div>
+      <h2>Project title</h2>
+      <p style="margin:0"><strong>Pantha Sahayam (పంట సహాయం):</strong> voice-first crop advice for farmers in Telugu, Hindi and English.</p>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="num">02</div>
+    <div>
+      <h2>The problem we are solving</h2>
+      <p>When pests or diseases attack, small farmers must decide <strong>what to spray, how much, and when it is safe to harvest</strong>. Usually they guess, or ask the pesticide shop that sells the spray. Wrong products, overdoses and spraying too close to harvest waste money, harm health and leave residues on food.</p>
+      <p>Existing farm apps are text-heavy, English-first and need a login, while many farmers are more comfortable <strong>speaking their own language</strong> than typing. Generic AI chatbots can also <strong>invent pesticide doses</strong>, which is dangerous.</p>
+      <div class="card accent">
+        <strong>Our answer:</strong> the farmer speaks the problem and hears back the <strong>officially registered spray, the dose per litre and the waiting period before harvest</strong>. Every number comes from the Government of India's <strong>CIB&amp;RC pesticide registry (2,243 registered uses)</strong> and is checked automatically.
+      </div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="num">03</div>
+    <div>
+      <h2>Who will use it</h2>
+      <ul>
+        <li><strong>Small and marginal farmers</strong> in Andhra Pradesh, Telangana and the Hindi-speaking states, using any phone browser with no app install and no login.</li>
+        <li><strong>Family members</strong> helping them, who can switch the answer's language at any time.</li>
+        <li><strong>Agriculture extension workers and Krishi Vigyan Kendra staff</strong> answering farmers' questions in the field.</li>
+        <li><strong>Agri-input dealers</strong> who want to recommend the correct registered product and dose.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="num">04</div>
+    <div>
+      <h2>The Gnani AI models we use</h2>
+      <div class="model">
+        <div><b>Gnani Prisma v2.5</b><small>Speech-to-text</small></div>
+        <div>Turns the farmer's spoken <strong>Telugu, Hindi or English</strong> into text. <span class="mono">/stt/v3</span> API, clips up to 30 seconds.</div>
+      </div>
+      <div class="model">
+        <div><b>Gnani Timbre v3.0</b><small>Text-to-speech · voice "Lakshmi"</small></div>
+        <div>Speaks <strong>every answer, follow-up question and choice prompt</strong> in the farmer's language, including when the language is switched.</div>
+      </div>
+      <div class="model">
+        <div><b>Gnani Evon</b><small>Language model · evaluated</small></div>
+        <div>An optional, guarded hook can make answers more conversational. We deliberately kept Evon <strong>out of the dose-giving path</strong>, so no AI model can change a pesticide number.</div>
+      </div>
+      <div class="card leaf"><strong>Design principle:</strong> AI listens and speaks; the advice itself always comes from the checked government registry.</div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span>Source code: github.com/ghosttech07/Farmer-app</span>
+    <span>#GnaniAI #GreatIndianAIInternshipChallenge</span>
+  </div>
+</body>
+</html>
